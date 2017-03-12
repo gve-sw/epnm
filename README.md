@@ -23,7 +23,7 @@ You will find the corresponding folders for each step.
 
 
 
-##APIs in this project
+##Products in this project
 * [Cisco Evolved Programmable Network Manager](http://www.cisco.com/c/en/us/products/cloud-systems-management/evolved-programmable-network-epn-manager/index.html)
 
 
