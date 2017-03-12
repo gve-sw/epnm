@@ -4,7 +4,7 @@ This repository contains code for the software project of ASE AMERICAS Team 1.
 The project is organized in a 3 step process, notably:
 * **Step 1** - Collect/streamline/write basic scripts for common tasks/operations of the main Cisco APIs
 * **Step 2** - Build a 'Wrapper' API for the basic scripts in step 1
-* **Step 3** - Write a simple use case that leverage the 'Wrapper' API. Participants may also leverage APIs outside the core ones, e.g., Spark & Tropo for human interaction.
+* **Step 3** - Write a simple use case that leverage the 'Wrapper' API. The use case may also leverage APIs outside the core ones, e.g., Spark & Tropo for human interaction.
 
 You will find the corresponding folders for each step.
 
