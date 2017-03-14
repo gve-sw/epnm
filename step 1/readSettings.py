@@ -4,7 +4,7 @@
 #Date 12 March 2017
 #Python version 3.X
 
-def loadSettings(settingsFile):
+def loadSettings(../settingsFile):
     """Reads settings file into an list.
 
     :param settingsFile: the name of the settings file e.g. ``'settings.txt'``
