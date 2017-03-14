@@ -18,6 +18,9 @@ You will find the corresponding folders for each step.
 ###Coaches/Sponsors
 * Monica Acosta
 * Chris Gump
+* Dong Youl Lee
+* Xavier Ciurana
+* Jason Mah
 
 
 ##Products in this project
