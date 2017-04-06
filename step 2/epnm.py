@@ -2,9 +2,7 @@ import requests
 import json
 import contextlib
 
-Class EPNM(object):
-
-	self.url = ''
+class EPNM(object):
 
 	def __init__(self, ip, user, password, verify=False):
 		self.ip = ip

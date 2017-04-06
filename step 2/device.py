@@ -1,16 +1,16 @@
 from abc import ABCMeta
 
-Class Device(object):
+class Device(object):
 
 	__metaclass__ = ABCMeta
-
-	self.interfaces = {}
 	
-	def __init__(self, name, mgmt_ip, loopback0, epnm_id):
+	def __init__(self, name, mgmt_ip, loopback0, epnm_id, 
+	interfaces = []):
 		self.name = name
 		self.mgmt_ip = mgmt_ip
 		self.loopback0 = loopback0
 		self.epnm_id = epnm_id
+		self.interfaces = interfaces
 
 	def getName(self):
 		#returns the name of the device (i.e. 4206 mid)
@@ -35,33 +35,52 @@ Class Device(object):
 
 	def addInt(self, int_name, int_add='x.x.x.x', int_mask='y.y.y.y')
 		#adds interface to the device object (address and mask are optional)
-		self.interfaces[int_name] = (int_add, int_mask)
+		self.interfaces.append(Interface(int_name, int_add, int_mask))
 		return
 
 	def addIntAddr(self, int_name, int_add, int_mask):
 		#adds or updates the address and mask for an interface
-		self.interfaces[int_name] = (int_add, int_mask)
+		self.interfaces[int_idx].updateAddr(int_add, int_mask)
 		return
 
-	def getInterface(self, int_name='all'):
+	def getInterface(self, int_idx=-1):
 		#returns the information for a given interface, by default it returns all interfaces
-		if int_name == 'all':
+		if int_name == -1:
 			return self.interfaces
 		else:
-			return self.interfaces[int_name]
+			return self.interfaces[int_idx]
 
 
-
-Class ASR(Device):
+class ASR(Device):
 	
 	self.dev_type = 'ASR'
+
+	def __init__(self, ...):
+		Device.__init__()
 
 	def getDev_type(self):
 		return self.dev_type
 
-Class NCS(Device):
+class NCS(Device):
 
 	self.dev_type = 'NCS'
 
 	def getDev_type(self):
 		return self.dev_typ
+
+class Interface(object):
+
+	def __init__ (self, name, addr, mask):
+		self.name = name
+		self.addr = addr
+		self.mask = mask
+
+	def updateAddr(self, newAddr, newMask):
+		self.addr = newAddr
+		self.mask = newMask
+
+	def getIntName(self):
+		return self.name
+
+	def getIntAddr(self):
+		return self.addr

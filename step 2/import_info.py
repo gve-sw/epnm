@@ -19,6 +19,7 @@ num_rows = dev_addr_df.shape[1] + 1
 
 devices = {}
 
+#create the device objects
 for i in range(0, num_rows):
 	device_name = dev_addr_df.loc[i]['Device Name']
 	device_mgmt_ip = dev_addr_df.loc[i]['Mgmt']
@@ -32,3 +33,12 @@ for i in range(0, num_rows):
 		devices[device_name] = ASR(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
 
 print devices
+
+#add interfaces to the device objects
+cols, rows = connections_df.shape
+
+for j in range(0, rows+1):
+	cur_dev = devices[connections_df.loc[i][0]]
+	
+	cur_dev.addInt(connections_df.loc[i][1], )
+	devices[connections_df.loc[i][0]]
