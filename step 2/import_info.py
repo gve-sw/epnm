@@ -6,8 +6,9 @@ from device.py import Device, ASR, NCS
 host = "198.18.134.7"
 username = "user"
 password = "Tester123"
+encoded_auth = base64.b64encode(username + ":" + password)
 
-manager = EPNM(host, username, password)
+manager = EPNM(host, encoded_auth)
 
 dev_addr_df = pd.read_csv('dev_address.csv')
 connections_df = pd.read_csv('connections.csv')
@@ -40,5 +41,9 @@ cols, rows = connections_df.shape
 for j in range(0, rows+1):
 	cur_dev = devices[connections_df.loc[i][0]]
 	
-	cur_dev.addInt(connections_df.loc[i][1], )
+	new_int_name = connections_df.loc[i][1]
+	new_int_addr_mask = connections_df.loc[i][2]
+	new_int_addr, new_int_mask = new_int_addr_mask.split('/')
+
+	cur_dev.addInt(,)
 	devices[connections_df.loc[i][0]]
