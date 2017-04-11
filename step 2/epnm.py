@@ -9,7 +9,7 @@ class EPNM(object):
 		self.ip = ip
 		self.verify = verify
 		self.url = 'https://' + self.ip + '/webacs/api/v1/'
-		self.authorization = "Basic " + encoded_auth
+		self.authorization = "Basic " + user_auth
 
 		self.getHeaders = {
 			'authorization' : self.authorization,
@@ -27,7 +27,7 @@ class EPNM(object):
 		getURL = self.url + 'data/Devices'
 
 		if dev_id != '':
-			getURL = getURL + dev_id + '.json'
+			getURL = getURL + '/' + dev_id + '.json'
 		else:
 			getURL += '.json'
 
@@ -46,19 +46,28 @@ class EPNM(object):
 
 	def getIDfromIP(self, dev_mgmt_ip):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
-		dev_list_json = self.getDevices()
+		dev_list_json = self.getDevice()
 		dev_id_list = self.getDevIDs(dev_list_json)
 
 		for i in dev_id_list:
 
 			dev_info_json = self.getDevice(i)
 			
+			#print dev_info_json.json()
 			resp_list = dev_info_json.json()['queryResponse']['entity']
 			dev_info_dict = resp_list[0]['devicesDTO']
 			
 			if dev_info_dict['ipAddress'] == dev_mgmt_ip:
 				return dev_info_dict['deviceId']
 		
+		print '\n \n \n'
+		print '=================================================================='
+		print '=====================                        ====================='
+		print '*********************  NO SUCH DEVICE FOUND  *********************'
+		print '=====================                        ====================='
+		print '=================================================================='
+		print '\n \n \n'
+
 		return "No such device found"
 
 	def getDevIDs(self, devices_resp):
@@ -73,7 +82,11 @@ class EPNM(object):
 
 	def getSWfromID(self, dev_id):
 		#function returns the software type for device provided
+		print dev_id
 		dev_info_json = self.getDevice(dev_id)
+		print '\n'
+		print dev_info_json.json()
+		print '\n'
 		resp_list = dev_info_json.json()['queryResponse']['entity']
 		dev_info_dict = resp_list[0]['devicesDTO']
 
