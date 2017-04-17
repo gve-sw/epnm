@@ -30,9 +30,10 @@ class EPNM(object):
 
 		if dev_id != '':
 			getURL = getURL + '/' + str(dev_id) + '.json'
-			print getURL
+			#print getURL
 		else:
 			getURL += '.json'
+			
 
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
 		#print json.dumps(json.loads(response.text), indent=2)
@@ -53,7 +54,7 @@ class EPNM(object):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
 		dev_id_list = self.getDevIDs(dev_list_json)
-		print dev_id_list
+		#print dev_id_list
 
 		for i in dev_id_list:
 			dev_info_json = self.getDevice(i)
@@ -85,9 +86,9 @@ class EPNM(object):
 	def getSWfromID(self, dev_id):
 		#function returns the software type for device provided
 		dev_info_json = self.getDevice(dev_id)
-		print '\n'
-		print dev_info_json.json()
-		print '\n'
+		# print '\n'
+		# print dev_info_json.json()
+		# print '\n'
 		resp_list = dev_info_json.json()['queryResponse']['entity']
 		dev_info_dict = resp_list[0]['devicesDTO']
 

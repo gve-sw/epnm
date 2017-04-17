@@ -17,9 +17,10 @@ connections_df = pd.read_csv('connections_test_NoASR.csv')
 print dev_addr_df
 print (" ")
 
-num_rows = dev_addr_df.shape[1] + 1
-
+num_rows = dev_addr_df.shape[1] #+ 1 ---> this was causing the loop to go out of bounds/ not sure if this is needed, address this at some point
+print "NUM ROWS: "+str(num_rows)
 devices = {}
+print 
 
 #create the device objects
 for i in range(0, num_rows):
@@ -28,15 +29,15 @@ for i in range(0, num_rows):
 	device_lo_ip = dev_addr_df.loc[i]['Loopback0']
 
 	device_epnm_id = manager.getIDfromIP(device_mgmt_ip)
-	print 'info.py '+str(device_epnm_id)
 	soft_type = manager.getSWfromID(device_epnm_id)
 
 	if soft_type == 'IOS-XE':
 		devices[device_name] = NCS(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
 	else:
 		devices[device_name] = ASR(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
-
+print '\n Found all device IDs \n'
 print devices
+
 
 #add interfaces to the device objects
 cols, rows = connections_df.shape
