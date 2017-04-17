@@ -5,6 +5,8 @@ import base64
 
 class EPNM(object):
 
+	requests.packages.urllib3.disable_warnings()
+
 	def __init__(self, ip, user_auth, verify=False):
 		self.ip = ip
 		self.verify = verify
@@ -27,11 +29,14 @@ class EPNM(object):
 		getURL = self.url + 'data/Devices'
 
 		if dev_id != '':
-			getURL = getURL + '/' + dev_id + '.json'
+			getURL = getURL + '/' + str(dev_id) + '.json'
+			print getURL
 		else:
 			getURL += '.json'
 
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
+		#print json.dumps(json.loads(response.text), indent=2)
+
 		return response
 
 	def deployTemplate(self, payload):
@@ -48,17 +53,14 @@ class EPNM(object):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
 		dev_id_list = self.getDevIDs(dev_list_json)
+		print dev_id_list
 
 		for i in dev_id_list:
-
 			dev_info_json = self.getDevice(i)
-			
-			#print dev_info_json.json()
 			resp_list = dev_info_json.json()['queryResponse']['entity']
 			dev_info_dict = resp_list[0]['devicesDTO']
-			
 			if dev_info_dict['ipAddress'] == dev_mgmt_ip:
-				return dev_info_dict['deviceId']
+				return dev_info_dict['@id']
 		
 		print '\n \n \n'
 		print '=================================================================='
@@ -82,7 +84,6 @@ class EPNM(object):
 
 	def getSWfromID(self, dev_id):
 		#function returns the software type for device provided
-		print dev_id
 		dev_info_json = self.getDevice(dev_id)
 		print '\n'
 		print dev_info_json.json()

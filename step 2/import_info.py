@@ -11,8 +11,8 @@ encoded_auth = base64.b64encode(username + ":" + password)
 
 manager = EPNM(host, encoded_auth)
 
-dev_addr_df = pd.read_csv('dev_address.csv')
-connections_df = pd.read_csv('connections.csv')
+dev_addr_df = pd.read_csv('dev_address_test_NoASR.csv')
+connections_df = pd.read_csv('connections_test_NoASR.csv')
 
 print dev_addr_df
 print (" ")
@@ -26,7 +26,9 @@ for i in range(0, num_rows):
 	device_name = dev_addr_df.loc[i]['Device Name']
 	device_mgmt_ip = dev_addr_df.loc[i]['Mgmt']
 	device_lo_ip = dev_addr_df.loc[i]['Loopback0']
+
 	device_epnm_id = manager.getIDfromIP(device_mgmt_ip)
+	print 'info.py '+str(device_epnm_id)
 	soft_type = manager.getSWfromID(device_epnm_id)
 
 	if soft_type == 'IOS-XE':
