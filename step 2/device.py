@@ -53,9 +53,9 @@ class Device(object):
 
 class ASR(Device):
 
-	def __init__(self):
+	def __init__(self, name, mgmt_ip, loopback0, epnm_id):
 		self.dev_type = 'ASR'
-		Device.__init__()
+		Device.__init__(self, name, mgmt_ip, loopback0, epnm_id)
 
 	def getDev_type(self):
 		return self.dev_type

@@ -50,18 +50,26 @@ def makeInts(conn_df, dev_dict, start):
 		idx = 5
 		inc = -1
 
-	cur_dev = devices[connections_df.loc[j][idx]]
+	print "start char is: " + start
+	print '\n'
+	new_idx = connections_df.axes[1][idx]
+	cur_dev = devices[connections_df.loc[j][new_idx]]
 	idx += inc
-	new_int_name = connections_df.loc[j][idx]
+	new_idx = connections_df.axes[1][idx]
+	new_int_name = connections_df.loc[j][new_idx]
 	idx += inc
-	new_int_addr_mask = connections_df.loc[j][idx]
-	new_int_addr, new_int_mask = new_int_addr_mask.split('/')
+	new_idx = connections_df.axes[1][idx]
+	new_int_addr_mask = connections_df.loc[j][new_idx]
+	print new_int_addr_mask.split('/')
+	new_list = new_int_addr_mask.split('/')
+	new_int_addr, new_int_mask = new_list[0], new_list[1]
+
 
 	cur_dev.addInt(new_int_name, new_int_addr, new_int_mask)
 	return
 
 
-for j in range(0, rows+1):
+for j in range(0, rows):
 	makeInts(connections_df, devices, 'A')
 	makeInts(connections_df, devices, 'Z')
 
