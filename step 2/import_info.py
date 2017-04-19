@@ -40,7 +40,7 @@ print devices
 
 
 #add interfaces to the device objects
-cols, rows = connections_df.shape
+rows, cols = connections_df.shape
 
 def makeInts(conn_df, dev_dict, start):
 	if start == 'A':
@@ -50,8 +50,6 @@ def makeInts(conn_df, dev_dict, start):
 		idx = 5
 		inc = -1
 
-	print "start char is: " + start
-	print '\n'
 	new_idx = connections_df.axes[1][idx]
 	cur_dev = devices[connections_df.loc[j][new_idx]]
 	idx += inc
@@ -74,3 +72,8 @@ for j in range(0, rows):
 	makeInts(connections_df, devices, 'Z')
 
 print devices
+
+for x in devices:
+	print '\n\n'
+	print devices[x]
+	print devices[x].getInterface()
