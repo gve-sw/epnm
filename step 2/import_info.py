@@ -71,9 +71,8 @@ for j in range(0, rows):
 	makeInts(connections_df, devices, 'A')
 	makeInts(connections_df, devices, 'Z')
 
-print devices
-
-for x in devices:
-	print '\n\n'
-	print devices[x]
-	print devices[x].getInterface()
+temp_id_list = manager.getTemplateIDs()
+for i in temp_id_list:
+	cur_template = manager.getTemplate(i)
+	cur_template_path = manager.getTemplatePath(cur_template)
+	print(cur_template_path)

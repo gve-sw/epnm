@@ -2,6 +2,7 @@ import requests
 import json
 import contextlib
 import base64
+from pprint import pprint
 
 class EPNM(object):
 
@@ -93,3 +94,34 @@ class EPNM(object):
 		dev_info_dict = resp_list[0]['devicesDTO']
 
 		return dev_info_dict['softwareType']
+
+
+
+	def getTemplateIDs(self):
+		getURL = self.url + '/data/CliTemplate.json'
+
+		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
+
+		temp_resp = response.json()['queryResponse']['entityId']
+
+		TemplateIdList = []
+		for entity in temp_resp:
+			TemplateIdList.append(entity['$'])
+
+		return TemplateIdList
+
+	def getTemplate(self, tid):
+		getURL = self.url + '/data/CliTemplate/' + str(tid) + '.json'
+
+		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
+
+		return response
+
+	def getTemplatePath(self, temp_json):
+		temp_resp = temp_json.json()['queryResponse']['entity']
+
+		DTO_dict = temp_resp[0]['cliTemplateDTO']
+		pprint(DTO_dict)
+		path = DTO_dict['path']
+
+		return path
