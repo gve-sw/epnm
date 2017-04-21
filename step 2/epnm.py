@@ -31,13 +31,11 @@ class EPNM(object):
 
 		if dev_id != '':
 			getURL = getURL + '/' + str(dev_id) + '.json'
-			#print getURL
 		else:
 			getURL += '.json'
 			
 
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
-		#print json.dumps(json.loads(response.text), indent=2)
 
 		return response
 
@@ -55,7 +53,6 @@ class EPNM(object):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
 		dev_id_list = self.getDevIDs(dev_list_json)
-		#print dev_id_list
 
 		for i in dev_id_list:
 			dev_info_json = self.getDevice(i)
@@ -87,9 +84,7 @@ class EPNM(object):
 	def getSWfromID(self, dev_id):
 		#function returns the software type for device provided
 		dev_info_json = self.getDevice(dev_id)
-		# print '\n'
-		# print dev_info_json.json()
-		# print '\n'
+
 		resp_list = dev_info_json.json()['queryResponse']['entity']
 		dev_info_dict = resp_list[0]['devicesDTO']
 
@@ -97,31 +92,52 @@ class EPNM(object):
 
 
 
-	def getTemplateIDs(self):
+	def getTemplateInfo(self):
 		getURL = self.url + '/data/CliTemplate.json'
 
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
+		count = response.json()['queryResponse']['@count']
+		getURL = self.url + 'data/CliTemplate.json?.full=true&.firstResult=0&.maxResults=' + count
 
-		temp_resp = response.json()['queryResponse']['entityId']
+		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
 
-		TemplateIdList = []
-		for entity in temp_resp:
-			TemplateIdList.append(entity['$'])
+		entity_dict = response.json()['queryResponse']['entity']
 
-		return TemplateIdList
+		InfoKeys = ['name', 'templateID', 'path']
+		TemplateInfoDict = {}
+
+		for temp_dicts in entity_dict:
+			entity_subdict = temp_dicts['cliTemplateDTO']
+
+			tempID = entity_subdict['templateId']
+			if 'name' in entity_subdict:
+				tempName = entity_subdict['name']
+			else:
+				tempName = 'No Name Found'
+			if 'path' in entity_subdict:
+				tempPath = entity_subdict['path']
+			else:
+				tempPath = 'No Path Found'
+
+			TemplateInfoDict[tempID] = [tempName, tempPath]
+
+		return TemplateInfoDict
 
 	def getTemplate(self, tid):
-		getURL = self.url + '/data/CliTemplate/' + str(tid) + '.json'
+		getURL = self.url + 'data/CliTemplate/' + str(tid) + '.json'
 
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
 
 		return response
 
-	def getTemplatePath(self, temp_json):
+	'''def getTemplatePath(self, temp_json):
 		temp_resp = temp_json.json()['queryResponse']['entity']
 
 		DTO_dict = temp_resp[0]['cliTemplateDTO']
-		pprint(DTO_dict)
-		path = DTO_dict['path']
 
-		return path
+		path = 'no path found'
+		for k in DTO_dict:
+			if k == 'path':
+				path = DTO_dict['path']
+
+		return path'''
