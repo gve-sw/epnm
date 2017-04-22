@@ -1,6 +1,7 @@
 import csv
 import base64
 import pandas as pd
+import pprint
 from epnm import EPNM
 from device import Device, ASR, NCS
 
@@ -32,8 +33,6 @@ for i in range(0, num_rows):
 	else:
 		devices[device_name] = ASR(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
 print 'Found all device IDs \n'
-#print devices
-
 
 #add interfaces to the device objects
 rows, cols = connections_df.shape
@@ -85,5 +84,8 @@ for key in temp_info_dict:
 		elif 'XR' in temp_info_dict[key][1]:
 			XR_template_info[key] = temp_info_dict[key]
 
+template_order = ['XE Global CDP', 'XE Interface CDP', 'XE Loopback Address', 'XE Interface Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Global MPLS-TE', 'XE Interface MPLS-TE', 'XE Interface RSVP']
 
-
+for i in devices:
+	response = manager.deployTemplate(devices[i].getEpnmId(), template_order[0])
+	print response

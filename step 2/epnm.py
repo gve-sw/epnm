@@ -90,8 +90,6 @@ class EPNM(object):
 
 		return dev_info_dict['softwareType']
 
-
-
 	def getTemplateInfo(self):
 		getURL = self.url + '/data/CliTemplate.json'
 
@@ -130,14 +128,41 @@ class EPNM(object):
 
 		return response
 
-	'''def getTemplatePath(self, temp_json):
-		temp_resp = temp_json.json()['queryResponse']['entity']
+	def deployTemplate(self, target_device, template_name, variable_payload=''):
+		putURL = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
 
-		DTO_dict = temp_resp[0]['cliTemplateDTO']
+		if variable_payload != '':
+			payload = """{
+				"cliTemplateCommand" : {
+					"targetDevices" : {
+						"targetDevice" : {
+							"targetDeviceID" : target_device,
+							"variableValues" : {
+								"variableValue" : variable_payload
+								}
+						}
+					},
+					"templateName" : template_name
+				}
+			}"""
 
-		path = 'no path found'
-		for k in DTO_dict:
-			if k == 'path':
-				path = DTO_dict['path']
+		else:
+			payload = """{
+				"cliTemplateCommand" : {
+					"targetDevices" : {
+						"targetDevice" : {
+							"targetDeviceID" : target_device
+						}
+					},
+					"templateName" : template_name
+				}
+			}"""
 
-		return path'''
+		#new_payload = json.loads(payload)
+		#print new_payload
+		response = requests.put(putURL, headers=self.postHeaders, data=payload, verify=self.verify)
+		return response.text
+
+
+
+
