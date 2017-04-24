@@ -23,8 +23,10 @@ devices = {}
 for i in range(0, num_rows):
 	device_name = dev_addr_df.loc[i]['Device Name']
 	device_mgmt_ip = dev_addr_df.loc[i]['Mgmt']
-	device_lo_ip = dev_addr_df.loc[i]['Loopback0']
-
+	temp = dev_addr_df.loc[i]['Loopback0']
+	device_lo_ip = temp.split('/')[0]
+	print device_lo_ip
+	
 	device_epnm_id = manager.getIDfromIP(device_mgmt_ip)
 	soft_type = manager.getSWfromID(device_epnm_id)
 
