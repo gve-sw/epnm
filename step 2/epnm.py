@@ -8,6 +8,10 @@ class EPNM(object):
 
 	requests.packages.urllib3.disable_warnings()
 
+	self.xe_temp_deploy = ['XE Global CDP', 'XE Interface CDP', 'XE Interface Address', 'XE Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Interface RSVP', 'XE Global MPLS-TE', 'XE Interface MPLS-TE']
+	self.xr_temp_deploy = ['XR Global CDP', 'XR Interface CDP', 'XR Interface Address', 'XR Loopback Address', 'XR Interface OSPF', 'XR Dummy Temp', 'XR Global MPLS', 'XR Interface RSVP', 'XR Global MPLS-TE', 'XR Interface MPLS-TE']
+
+
 	def __init__(self, ip, user_auth, verify=False):
 		self.ip = ip
 		self.verify = verify
@@ -128,40 +132,120 @@ class EPNM(object):
 
 		return response
 
+	def testVerify(self, jobName):
+
+		url = "https://198.18.134.7/webacs/api/v1/op/jobService/runhistory.json"
+
+		querystring = {"jobName":str(jobName)}
+		print querystring
+
+		#	querystring = {"jobName":"JobCliTemplateDeployIOSDevices10_27_59_612_PM_04_21_2017"}
+		#	print querystring
+
+		headers = {
+		    'authorization': "Basic dXNlcjpUZXN0ZXIxMjM=",
+		    'cache-control': "no-cache",
+		    'postman-token': "6b9fdfb0-1fa7-7698-0e16-3dab07dd3004"
+		    }
+
+		response = requests.request("GET", url, headers=headers, params=querystring, verify=False)
+
+		print(response.text)
+
+	def verifyJobResult(self, jobName):
+
+		getURL = self.url + 'op/jobService/runhistory.json'
+
+		querystring = {"jobName":jobName}
+		
+		response = requests.request("GET", getURL, headers=self.getHeaders, params=querystring, verify=self.verify)
+		
+		print response.text
+		
+		pprint(response.json())
+
+		return response
+
 	def deployTemplate(self, target_device, template_name, variable_payload=''):
 		putURL = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
 
 		if variable_payload != '':
-			payload = """{
-				"cliTemplateCommand" : {
-					"targetDevices" : {
-						"targetDevice" : {
-							"targetDeviceID" : target_device,
-							"variableValues" : {
-								"variableValue" : variable_payload
-								}
-						}
-					},
-					"templateName" : template_name
-				}
-			}"""
+			payload = '{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : %s, "variableValues" : { "variableValue" : %s}}}, "templateName" : %s}}' % (target_device, variable_payload, template_name)
 
 		else:
-			payload = """{
-				"cliTemplateCommand" : {
-					"targetDevices" : {
-						"targetDevice" : {
-							"targetDeviceID" : target_device
-						}
-					},
-					"templateName" : template_name
-				}
-			}"""
+			payload = '{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : %s }},"templateName" : %s}}' % (target_device, template_name)
 
-		#new_payload = json.loads(payload)
-		#print new_payload
 		response = requests.put(putURL, headers=self.postHeaders, data=payload, verify=self.verify)
-		return response.text
+
+		return response
+
+	def templateDeploymentMaster(self):
+		
+		length = len(xe_temp_deploy)
+		for names in range(0, length):
+
+
+	def deployGlobalCDP(self, device_obj):
+		dev_type = device_obj.type
+		if dev_type == 'ASR':
+			cur_template = xr_temp_deploy[0]
+		else:
+			cur_template = xe_temp_deploy[0]
+
+		return deployTemplate(device_obj.epnm_id, cur_template)
+
+	def deployIntCDP(self, device_obj):
+		dev_type = device_obj.type
+
+		if dev_type == 'ASR':
+			cur_template = xr_temp_deploy[1]
+		else:
+			cur_template = xe_temp_deploy[1]
+
+		for key in device_obj.getInterface():
+			if key == 'loopback0':
+				#we don't enable CDP on the loopback interface
+				continue
+			else:
+				cur_inter = device_obj.getInterface(key)
+				var_load = '{"name": %s, "value": %s }' % 'interfaceName', cur_inter.name
+				response = deployTempalte(device_obj.epnm_id, cur_template, var_load)
+				#need to insert check here to ake sure the response is positive
+
+		return
+
+	def deployIntAddr(self, device_obj):
+		dev_type = device_obj.type
+
+		if dev_type == 'ASR':
+			cur_template = xr_temp_deploy[2]
+		else:
+			cur_template = xe_temp_deploy[2]
+		#Don't we set these up front? Is this template needed?
+		#for key in device_obj.getInterface():
+
+	def deployLoopbackAddr(self):
+		#see the comments in deployIntAddr function
+		print("I don't think we need this template")
+
+	def deployOSPF(self, device_obj):
+		dev_type = device_obj.type
+
+		if dev_type == 'ASR':
+			lo0 = device_obj.getInterface('loopback0')
+			for key in device_obj.getInterface():
+				var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % 'interfaceName', key, 'Loopback0', lo0.addr
+				deployTemplate(device_obj.epnm_id, xr_temp_deploy[4], var_load)
+
+		else:
+			loAddr = device_obj.getInterface('loopback0')
+			var_load = '{"name": %s, "value": %s }' % 'Loopback0', loAddr.addr
+			deployTemplate(device_obj.epnm_id, xe_temp_deploy[4], var_load)
+			for key in device_obj.getInterface():
+				var_load = '{"name": %s, "value": %s }' % 'interfaceName', key
+				deployTemplate(device_obj.epnm_id, xe_temp_deploy[5], var_load)
+
+
 
 
 

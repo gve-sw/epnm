@@ -88,4 +88,13 @@ template_order = ['XE Global CDP', 'XE Interface CDP', 'XE Loopback Address', 'X
 
 for i in devices:
 	response = manager.deployTemplate(devices[i].getEpnmId(), template_order[0])
-	print response
+	#jobName = response.json()['mgmtResponse']['cliTemplateCommandJobResult']['jobName']
+
+	#job_resp = manager.verifyJobResult(jobName)
+	#manager.testVerify(jobName)
+	#job_dict = job_resp.json()['mgmtResponse']
+	#for key in job_dict:
+		#print key
+		#print job_dict[key]
+
+
