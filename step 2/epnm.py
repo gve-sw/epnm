@@ -193,14 +193,18 @@ class EPNM(object):
 			deployGlobalMPLSTE(cur_dev)
 			deployIntMPLSTE(cur_dev)
 		'''
-
+		print("Deploying global CDP")
 		for dev in devices:
 			print dev
-			#response = self.deployGlobalCDP(devices[dev])
-			#print response
-			#print response.text
+			response = self.deployGlobalCDP(devices[dev])
+			print response
+
+		print("Deploying Int CDP")
+		for dev in devices:
+			print dev
 			response = self.deployIntCDP(devices[dev])
 			print response
+
 
 	def deployGlobalCDP(self, device_obj):
 		device_type = device_obj.dev_type
