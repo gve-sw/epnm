@@ -38,7 +38,7 @@ class Device(object):
 		self.interfaces[int_name] = Interface(int_name, int_add, int_mask)
 		return
 
-	def addIntAddr(self, int_name, int_add, int_mask):
+	def addIntAddr(self, int_name, int_add, int_mask=32):
 		#adds or updates the address and mask for an interface
 		self.interfaces[int_name].updateAddr(int_add, int_mask)
 		return

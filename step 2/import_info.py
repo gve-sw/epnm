@@ -84,17 +84,19 @@ for key in temp_info_dict:
 		elif 'XR' in temp_info_dict[key][1]:
 			XR_template_info[key] = temp_info_dict[key]
 
-template_order = ['XE Global CDP', 'XE Interface CDP', 'XE Loopback Address', 'XE Interface Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Global MPLS-TE', 'XE Interface MPLS-TE', 'XE Interface RSVP']
-
+#template_order = ['XE Global CDP', 'XE Interface CDP', 'XE Loopback Address', 'XE Interface Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Global MPLS-TE', 'XE Interface MPLS-TE', 'XE Interface RSVP']
+print "About to call templateDeploymentMaster"
+manager.templateDeploymentMaster(devices)
+print "Returned from templateDeploymentMaster"
+'''
 for i in devices:
 	response = manager.deployTemplate(devices[i].getEpnmId(), template_order[0])
-	#jobName = response.json()['mgmtResponse']['cliTemplateCommandJobResult']['jobName']
+	jobName = response.json()['mgmtResponse']['cliTemplateCommandJobResult']['jobName']
 
-	#job_resp = manager.verifyJobResult(jobName)
-	#manager.testVerify(jobName)
+	job_resp = manager.verifyJobResult(jobName)
+	manager.testVerify(jobName)
 	#job_dict = job_resp.json()['mgmtResponse']
 	#for key in job_dict:
 		#print key
 		#print job_dict[key]
-
-
+'''
