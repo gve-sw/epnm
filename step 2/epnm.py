@@ -183,22 +183,8 @@ class EPNM(object):
 		return response
 
 	def templateDeploymentMaster(self, devices):
-		'''			
-		for dev in devices:
-			cur_dev = devices[dev]
-			print("Deploying CDP")
-			deployGlobalCDP(cur_dev)
-			deployIntCDP(cur_dev)
-			print("Deploying Interface Addresses")
-			deployIntAddr(cur_dev)
-			deployLoopbackAddr(cur_dev)
-			deployOSPF(cur_dev)
-			deployGlobalMPLS(cur_dev)
-			deployIntRSVP(cur_dev)
-			deployGlobalMPLSTE(cur_dev)
-			deployIntMPLSTE(cur_dev)
-		'''	
-		'''print("Deploying global CDP")
+
+		print("Deploying global CDP")
 		for dev in devices:
 			print dev
 			response = self.deployGlobalCDP(devices[dev])
@@ -214,7 +200,7 @@ class EPNM(object):
 		for dev in devices:
 			print dev
 			response = self.deployIntAddr(devices[dev])
-			print response '''
+			print response 
 
 		print("Deploying Loopback Int")
 		for dev in devices:
@@ -379,7 +365,7 @@ class EPNM(object):
 
 		for key in device_obj.getInterface():
 			var_load = '{"name": %s, "value": %s}' % ('interfaceName', key)
-		self.deployTemplate(device_obj.epnm_id, cur_template)
+			self.deployTemplate(device_obj.epnm_id, cur_template,var_load)
 
 
 
