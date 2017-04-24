@@ -4,13 +4,13 @@ class Device(object):
 
 	__metaclass__ = ABCMeta
 	
-	def __init__(self, name, mgmt_ip, loopback0, epnm_id, 
-	interfaces = {}):
+	def __init__(self, name, mgmt_ip, loopback0, epnm_id, interfaces = {}):
 		self.name = name
 		self.mgmt_ip = mgmt_ip
 		self.epnm_id = epnm_id
 		self.interfaces = interfaces
-		self.addInt('loopback0', loopback0, 32)
+		lo_name = 'loopback_' + self.name
+		self.addInt(lo_name, loopback0, 32)
 
 	def getName(self):
 		#returns the name of the device (i.e. 4206 mid)

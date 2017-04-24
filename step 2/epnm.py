@@ -196,14 +196,16 @@ class EPNM(object):
 
 		for dev in devices:
 			print dev
-			response = self.deployGlobalCDP(devices[dev])
+			#response = self.deployGlobalCDP(devices[dev])
+			#print response
+			#print response.text
+			response = self.deployIntCDP(devices[dev])
 			print response
-			print response.text
 
 	def deployGlobalCDP(self, device_obj):
 		device_type = device_obj.dev_type
 		if device_type == 'ASR':
-			cur_template = xr_temp_deploy[0]
+			cur_template = self.xr_temp_deploy[0]
 		else:
 			cur_template = self.xe_temp_deploy[0]
 
@@ -213,18 +215,23 @@ class EPNM(object):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = xr_temp_deploy[1]
+			cur_template = self.xr_temp_deploy[1]
 		else:
-			cur_template = xe_temp_deploy[1]
+			cur_template = self.xe_temp_deploy[1]
 
+		#print 'device object is: '
+		#print device_obj
+		#print device_obj.name
 		for key in device_obj.getInterface():
 			if key == 'loopback0':
 				#we don't enable CDP on the loopback interface
 				continue
 			else:
 				cur_inter = device_obj.getInterface(key)
-				var_load = '{"name": %s, "value": %s }' % 'interfaceName', cur_inter.name
-				response = self.deployTempalte(device_obj.epnm_id, cur_template, var_load)
+				var_load = '{"name": %s, "value": %s }' % ('interfaceName', cur_inter.name)
+				#print cur_inter.name
+				#print key 
+				response = self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
 				#need to insert check here to ake sure the response is positive
 
 		return

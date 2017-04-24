@@ -24,15 +24,51 @@ for i in range(0, num_rows):
 	device_name = dev_addr_df.loc[i]['Device Name']
 	device_mgmt_ip = dev_addr_df.loc[i]['Mgmt']
 	device_lo_ip = dev_addr_df.loc[i]['Loopback0']
+	#print device_lo_ip
+	print "===============NEW ITERATION ====================="
 
 	device_epnm_id = manager.getIDfromIP(device_mgmt_ip)
 	soft_type = manager.getSWfromID(device_epnm_id)
 
+	print '\n'
+	print "printing devices dictionary now"
+	for key in devices:
+		print '\n'
+		print key
+		print devices[key]
+		cur_dev = devices[key]
+		#print cur_dev.name
+		print "printing interfaces for device now"
+		for ints in cur_dev.interfaces:
+			print cur_dev.getInterface(ints)
+			cur_int = cur_dev.getInterface(ints)
+			print cur_int.name
+			print cur_int.addr
+
 	if soft_type == 'IOS-XE':
-		devices[device_name] = NCS(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
+		#print(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
+		temp_obj = NCS(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
+		devices[device_name] = temp_obj
 	else:
 		devices[device_name] = ASR(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
 print 'Found all device IDs \n'
+
+print '\n'
+print '\n'
+for key in devices:
+	print '\n'
+	print key
+	print devices[key]
+	cur_dev = devices[key]
+	print cur_dev.name
+	for ints in cur_dev.interfaces:
+		print cur_dev.getInterface(ints)
+		cur_int = cur_dev.getInterface(ints)
+		print cur_int.name
+		print cur_int.addr
+
+print '\n'
+print '\n'
 
 #add interfaces to the device objects
 rows, cols = connections_df.shape
@@ -45,17 +81,24 @@ def makeInts(conn_df, dev_dict, start):
 		idx = 5
 		inc = -1
 
+	#print("Adding the " + start + " port")
 	new_idx = connections_df.axes[1][idx]
 	cur_dev = devices[connections_df.loc[j][new_idx]]
+
+	#print "device port is assocaited with is: "
+	#print cur_dev.name 
 
 	idx += inc
 	new_idx = connections_df.axes[1][idx]
 	new_int_name = connections_df.loc[j][new_idx]
 
+	#print "Interface name to associate is: " + new_int_name
+
 	idx += inc
 	new_idx = connections_df.axes[1][idx]
 	new_int_addr_mask = connections_df.loc[j][new_idx]
 
+	#print "Address for the interface is: " + new_int_addr_mask
 	new_list = new_int_addr_mask.split('/')
 	new_int_addr, new_int_mask = new_list[0], new_list[1]
 
@@ -65,8 +108,27 @@ def makeInts(conn_df, dev_dict, start):
 
 
 for j in range(0, rows):
+	#print "j is now " + str(j)
 	makeInts(connections_df, devices, 'A')
 	makeInts(connections_df, devices, 'Z')
+
+print '\n'
+print '\n'
+print '\n'
+for key in devices:
+	print '\n'
+	print key
+	print devices[key]
+	cur_dev = devices[key]
+	print cur_dev.name
+	for ints in cur_dev.interfaces:
+		print cur_dev.getInterface(ints)
+		cur_int = cur_dev.getInterface(ints)
+		print cur_int.name
+		print cur_int.addr
+
+print '\n'
+print '\n'
 
 print 'About to get Template Info \n'
 
