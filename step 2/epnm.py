@@ -42,17 +42,7 @@ class EPNM(object):
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
 
 		return response
-		'''
-	def deployTemplate(self, payload):
-		#function deploys template through a job and returns the id for the job
-		putUrl = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
 
-		response = requests.request("PUT", putUrl, data=payload, headers=self.postHeaders, verify=False)
-
-		jobName = response.json()['mgmtResponse']['cliTemplateCommandJobResult']['jobName']
-
-		return jobName
-		'''
 	def getIDfromIP(self, dev_mgmt_ip):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
@@ -200,7 +190,11 @@ class EPNM(object):
 		for dev in devices:
 			print dev
 			response = self.deployIntAddr(devices[dev])
+<<<<<<< Updated upstream
 			print response 
+=======
+			print response
+>>>>>>> Stashed changes
 
 		print("Deploying Loopback Int")
 		for dev in devices:
@@ -237,8 +231,6 @@ class EPNM(object):
 			print dev
 			response = self.deployIntMPLSTE(devices[dev])
 			print response
-
-
 
 
 	def deployGlobalCDP(self, device_obj):

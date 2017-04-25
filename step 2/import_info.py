@@ -10,38 +10,48 @@ username = "user"
 password = "Tester123"
 encoded_auth = base64.b64encode(username + ":" + password)
 
+#instantiate instance of EPNM to handle API calls
 manager = EPNM(host, encoded_auth)
 
+#load the device and connections info from provided CSV files
 dev_addr_df = pd.read_csv('dev_address_test_NoASR.csv')
 connections_df = pd.read_csv('connections_test_NoASR.csv')
 
+#number of rows corresponds to number of devices being managed
 num_rows = dev_addr_df.shape[1]
 devices = {}
 
 
-#create the device objects
+#create one device object per iteration
 for i in range(0, num_rows):
+	#get the information provided in the dev_address CSV file
 	device_name = dev_addr_df.loc[i]['Device Name']
 	device_mgmt_ip = dev_addr_df.loc[i]['Mgmt']
 	temp = dev_addr_df.loc[i]['Loopback0']
 	device_lo_ip = temp.split('/')[0]
-	print device_lo_ip
 	
+	#Use the management IP address to get the corresponding device ID from EPNM
 	device_epnm_id = manager.getIDfromIP(device_mgmt_ip)
+	#determine the software type based on device info provided by EPNM
 	soft_type = manager.getSWfromID(device_epnm_id)
 
+	#instantiate object based on software type
 	if soft_type == 'IOS-XE':
-		print(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
-		temp_obj = NCS(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
-		devices[device_name] = temp_obj
+		devices[device_name] = NCS(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
 	else:
 		devices[device_name] = ASR(device_name, device_mgmt_ip, device_lo_ip, device_epnm_id)
-print 'Found all device IDs \n'
 
 #add interfaces to the device objects
 rows, cols = connections_df.shape
 
 def makeInts(conn_df, dev_dict, start):
+	'''
+	function takes the connections dataframe loaded from CSV, 
+	splits the frame to pull both A and Z ports
+	and instantiates the interfaces on the appropriate device object
+	'''
+
+	#determine if we're handling an A or Z port
 	if start == 'A':
 		idx = 0
 		inc = 1
@@ -49,13 +59,16 @@ def makeInts(conn_df, dev_dict, start):
 		idx = 5
 		inc = -1
 
+	#get device name from df
 	new_idx = connections_df.axes[1][idx]
 	cur_dev = devices[connections_df.loc[j][new_idx]]
 
+	#get the name for the new interface
 	idx += inc
 	new_idx = connections_df.axes[1][idx]
 	new_int_name = connections_df.loc[j][new_idx]
 
+	#get the interface address and mask then split it
 	idx += inc
 	new_idx = connections_df.axes[1][idx]
 	new_int_addr_mask = connections_df.loc[j][new_idx]
@@ -63,44 +76,16 @@ def makeInts(conn_df, dev_dict, start):
 	new_list = new_int_addr_mask.split('/')
 	new_int_addr, new_int_mask = new_list[0], new_list[1]
 
-
+	#create the new interface object on the device object specified
 	cur_dev.addInt(new_int_name, new_int_addr, new_int_mask)
 	return
 
-
+#iterate over the rows in the connections table to create the interfaces
 for j in range(0, rows):
 	makeInts(connections_df, devices, 'A')
 	makeInts(connections_df, devices, 'Z')
 
-'''
-print 'About to get Template Info \n'
-temp_info_dict = manager.getTemplateInfo()
-print 'Got Template Info'
-
-XE_template_info = {}
-XR_template_info = {}
-
-for key in temp_info_dict:
-	if 'My Templates/X' in temp_info_dict[key][1]:
-		if 'XE' in temp_info_dict[key][1]:
-			XE_template_info[key] = temp_info_dict[key]
-		elif 'XR' in temp_info_dict[key][1]:
-			XR_template_info[key] = temp_info_dict[key]
-'''
-
-#template_order = ['XE Global CDP', 'XE Interface CDP', 'XE Loopback Address', 'XE Interface Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Global MPLS-TE', 'XE Interface MPLS-TE', 'XE Interface RSVP']
+#deploy the templates on the devices
 print "About to call templateDeploymentMaster"
 manager.templateDeploymentMaster(devices)
 print "Returned from templateDeploymentMaster"
-'''
-for i in devices:
-	response = manager.deployTemplate(devices[i].getEpnmId(), template_order[0])
-	jobName = response.json()['mgmtResponse']['cliTemplateCommandJobResult']['jobName']
-
-	job_resp = manager.verifyJobResult(jobName)
-	manager.testVerify(jobName)
-	#job_dict = job_resp.json()['mgmtResponse']
-	#for key in job_dict:
-		#print key
-		#print job_dict[key]
-'''

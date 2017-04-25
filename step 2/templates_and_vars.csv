@@ -1,1 +1,0 @@
-﻿Template,Variable,typeXR Global CDP,,XR Interface CDP,interfaceName,strXR Interface Address,interfaceName,str,ipAddress,ipv4 addrXR Loopback Address,Loopback0,ipv4 addrXR Interface OSPF,interfaceName,str,Loopback0,ipv4 addrXR Global MPLS,Loopback0,ipv4 addrXR Interface RSVP,interfaceName,str,percentValue,intXR Global MPLS-TE,,XR Interface MPLS-TE,interfaceName,str
