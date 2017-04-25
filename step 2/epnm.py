@@ -190,11 +190,7 @@ class EPNM(object):
 		for dev in devices:
 			print dev
 			response = self.deployIntAddr(devices[dev])
-<<<<<<< Updated upstream
-			print response 
-=======
 			print response
->>>>>>> Stashed changes
 
 		print("Deploying Loopback Int")
 		for dev in devices:
@@ -271,10 +267,13 @@ class EPNM(object):
 			cur_template = self.xe_temp_deploy[2]
 
 		for key in device_obj.getInterface():
-			cur_addr = device_obj.getInterface(key)
-			cur_addr_str = cur_addr.addr
-			var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'ipAddress', cur_addr_str)
-			self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
+			if key == 'loopback0':
+				continue
+			else:
+				cur_addr = device_obj.getInterface(key)
+				cur_addr_str = cur_addr.addr
+				var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'ipAddress', cur_addr_str)
+				self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
 
 	def deployLoopbackAddr(self, device_obj):
 		device_type = device_obj.dev_type
