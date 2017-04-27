@@ -9,7 +9,6 @@ class EPNM(object):
 	requests.packages.urllib3.disable_warnings()
 
 	templates = ['XE Global CDP', 'XE Interface CDP', 'XE Interface Address', 'XE Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Interface RSVP', 'XE Global MPLS-TE', 'XE Interface MPLS-TE']
-	#xr_temp_deploy = ['XR Global CDP', 'XR Interface CDP', 'XR Interface Address', 'XR Loopback Address', 'XR Interface OSPF', 'XR Dummy Temp', 'XR Global MPLS', 'XR Interface RSVP', 'XR Global MPLS-TE', 'XR Interface MPLS-TE']
 	#templates = ['XE Global CDP', 'XR Global CDP', 'XE Interface CDP', 'XR Interface CDP', 'XE Interface Address', 'XR Interface Address', 'XE Loopback Address', 'XR Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XR Interface OSPF', 'XE Global MPLS', 'XR Global MPLS', 'XE Interface RSVP', 'XR Interface RSVP', 'XE Global MPLS-TE', 'XR Global MPLS-TE', 'XE Interface MPLS-TE', 'XR Interface MPLS-TE']
 
 
@@ -184,6 +183,13 @@ class EPNM(object):
 		print response.text
 		return response
 
+	def currentTemplate(self, device_obj, XR_template, XE_template):
+		device_type = device_obj.dev_type
+		if device_type == 'ASR':
+			cur_template = XR_template
+		else:
+			cur_template = XE_template
+		return cur_template
 
 
 	def templateDeploymentMaster(self, devices):
@@ -293,21 +299,12 @@ class EPNM(object):
 
 
 	def deployGlobalCDP(self, device_obj):
-		device_type = device_obj.dev_type
-		if device_type == 'ASR':
-			cur_template = "XR Global CDP"
-		else:
-			cur_template = "XE Global CDP"
+		cur_template = self.currentTemplate(device_obj, "XR Global CDP", "XE Global CDP")
 
 		return self.deployTemplate(device_obj.epnm_id, cur_template)
 
 	def deployIntCDP(self, device_obj):
-		device_type = device_obj.dev_type
-
-		if device_type == 'ASR':
-			cur_template = "XR Interface CDP"
-		else:
-			cur_template = "XE Interface CDP"
+		cur_template = self.currentTemplate(device_obj, "XR Interface CDP", "XE Interface CDP")
 
 		for key in device_obj.getInterface():
 			if key == 'loopback0':
@@ -317,21 +314,15 @@ class EPNM(object):
 				cur_inter = device_obj.getInterface(key)
 				var_load = '{"name": %s, "value": %s }' % ('interfaceName', cur_inter.name)
 				response = self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
-				#need to insert check here to ake sure the response is positive
+				#need to insert check here to make sure the response is positive
 
 		return response
 
 	def deployIntAddr(self, device_obj):
-		device_type = device_obj.dev_type
-
-		if device_type == 'ASR':
-			cur_template = "XR Interface Address"
-		else:
-			cur_template = "XE Interface Address"
+		cur_template = self.currentTemplate(device_obj, "XR Interface Address", "XE Interface Address")
 
 		for key in device_obj.getInterface():
 			if key == 'loopback0':
-
 				continue
 			else:
 				cur_addr = device_obj.getInterface(key)
@@ -340,12 +331,7 @@ class EPNM(object):
 				self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
 
 	def deployLoopbackAddr(self, device_obj):
-		device_type = device_obj.dev_type
-
-		if device_type == 'ASR':
-			cur_template = "XR Loopback Address"
-		else:
-			cur_template = "XE Loopback Address"
+		cur_template = self.currentTemplate(device_obj, "XR Loopback Address", "XE Loopback Address")
 
 		lo = device_obj.getInterface('loopback0')
 		lo_addr = lo.addr
@@ -374,24 +360,19 @@ class EPNM(object):
 
 	def deployGlobalMPLS(self, device_obj):
 		device_type = device_obj.dev_type
+		cur_template = self.currentTemplate(device_obj, "XR Global MPLS", "XE Global MPLS")
 
 		if device_type == 'ASR':
-			cur_template = "XR Global MPLS"
 			lo = device_obj.getInterface('loopback0')
-			var_load = '{"name": %s, "value": %s}' % 'Loopback0', lo.addr
+			var_load = '{"name": %s, "value": %s}' % ('Loopback0', lo.addr)
+			self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
 		else:
-			cur_template = "XE Global MPLS"
 			self.deployTemplate(device_obj.epnm_id, cur_template)
 
 	def deployIntRSVP(self, device_obj, percent_value=100):
 		#we need to determine where the percent values are coming from and
 		#if they will be the same for all interfaces before continuing
-		device_type = device_obj.dev_type
-
-		if device_type == 'ASR':
-			cur_template = "XR Interface RSVP"
-		else:
-			cur_template = "XE Interface RSVP"
+		cur_template = self.currentTemplate(device_obj, "XR Interface RSVP", "XE Interface RSVP")
 
 		for key in device_obj.getInterface():
 			if key == 'loopback0':
@@ -401,22 +382,12 @@ class EPNM(object):
 				self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
 
 	def deployGlobalMPLSTE(self, device_obj):
-		device_type = device_obj.dev_type
-
-		if device_type == 'ASR':
-			cur_template = "XR Global MPLS-TE"
-		else:
-			cur_template = "XE Global MPLS-TE"
+		cur_template = self.currentTemplate(device_obj, "XR Global MPLS-TE", "XE Global MPLS-TE")
 
 		self.deployTemplate(device_obj.epnm_id, cur_template)
 
 	def deployIntMPLSTE(self, device_obj):
-		device_type = device_obj.dev_type
-
-		if device_type == 'ASR':
-			cur_template = "XR Interface MPLS-TE"
-		else:
-			cur_template = "XE Interface MPLS-TE"
+		cur_template = self.currentTemplate(device_obj, "XR Interface MPLS-TE", "XE Interface MPLS-TE")
 
 		for key in device_obj.getInterface():
 			if key == 'loopback0':
