@@ -8,8 +8,9 @@ class EPNM(object):
 
 	requests.packages.urllib3.disable_warnings()
 
-	xe_temp_deploy = ['XE Global CDP', 'XE Interface CDP', 'XE Interface Address', 'XE Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Interface RSVP', 'XE Global MPLS-TE', 'XE Interface MPLS-TE']
-	xr_temp_deploy = ['XR Global CDP', 'XR Interface CDP', 'XR Interface Address', 'XR Loopback Address', 'XR Interface OSPF', 'XR Dummy Temp', 'XR Global MPLS', 'XR Interface RSVP', 'XR Global MPLS-TE', 'XR Interface MPLS-TE']
+	templates = ['XE Global CDP', 'XE Interface CDP', 'XE Interface Address', 'XE Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Interface RSVP', 'XE Global MPLS-TE', 'XE Interface MPLS-TE']
+	#xr_temp_deploy = ['XR Global CDP', 'XR Interface CDP', 'XR Interface Address', 'XR Loopback Address', 'XR Interface OSPF', 'XR Dummy Temp', 'XR Global MPLS', 'XR Interface RSVP', 'XR Global MPLS-TE', 'XR Interface MPLS-TE']
+	#templates = ['XE Global CDP', 'XR Global CDP', 'XE Interface CDP', 'XR Interface CDP', 'XE Interface Address', 'XR Interface Address', 'XE Loopback Address', 'XR Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XR Interface OSPF', 'XE Global MPLS', 'XR Global MPLS', 'XE Interface RSVP', 'XR Interface RSVP', 'XE Global MPLS-TE', 'XR Global MPLS-TE', 'XE Interface MPLS-TE', 'XR Interface MPLS-TE']
 
 
 	def __init__(self, ip, user_auth, verify=False):
@@ -42,7 +43,17 @@ class EPNM(object):
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
 
 		return response
+		'''
+	def deployTemplate(self, payload):
+		#function deploys template through a job and returns the id for the job
+		putUrl = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
 
+		response = requests.request("PUT", putUrl, data=payload, headers=self.postHeaders, verify=False)
+
+		jobName = response.json()['mgmtResponse']['cliTemplateCommandJobResult']['jobName']
+
+		return jobName
+		'''
 	def getIDfromIP(self, dev_mgmt_ip):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
@@ -156,6 +167,7 @@ class EPNM(object):
 
 		return response
 
+
 	def deployTemplate(self, target_device, template_name, variable_payload=''):
 		putURL = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
 
@@ -172,8 +184,55 @@ class EPNM(object):
 		print response.text
 		return response
 
+
+
 	def templateDeploymentMaster(self, devices):
 
+		for template_name in self.templates:
+			for dev in devices:
+				if template_name == ("XE Global CDP" or "XR Global CDP"):
+					response = self.deployGlobalCDP(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response
+				elif template_name == ("XE Interface CDP" or "XR Interface CDP"):
+					response = self.deployIntCDP(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response
+				elif template_name == ("XE Interface Address" or "XR Interface Address"):
+					response = self.deployIntAddr(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response
+				elif template_name == ("XE Loopback Address" or "XR Loopback Address"):
+					response = self.deployLoopbackAddr(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response				
+				elif template_name == ("XE Interface OSPF" or "XR Interface OSPF"):
+					response = self.deployOSPF(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response
+				elif template_name == ("XE Global OSPF"):
+					continue #OSPF already deployed with XE Interface (see deployOSPF)
+				elif template_name == ("XE Global MPLS" or "XR Global MPLS"):
+					response = self.deployGlobalMPLS(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response
+				elif template_name == ("XE Interface RSVP" or "XR Interface RSVP"):
+					response = self.deployIntRSVP(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response				
+				elif template_name == ("XE Global MPLS-TE" or "XR Global MPLS-TE"):
+					response = self.deployGlobalMPLSTE(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response				
+				elif template_name == ("XE Interface MPLS-TE" or "XR Interface MPLS-TE"):
+					response = self.deployIntMPLSTE(devices[dev])
+					print 'Deployed %s template on %s' %(template_name, dev)
+					print response
+				else:
+					print "Template Not Found"
+
+
+	'''
 		print("Deploying global CDP")
 		for dev in devices:
 			print dev
@@ -190,7 +249,7 @@ class EPNM(object):
 		for dev in devices:
 			print dev
 			response = self.deployIntAddr(devices[dev])
-			print response
+			print response 
 
 		print("Deploying Loopback Int")
 		for dev in devices:
@@ -228,13 +287,17 @@ class EPNM(object):
 			response = self.deployIntMPLSTE(devices[dev])
 			print response
 
+	'''
+
+
+
 
 	def deployGlobalCDP(self, device_obj):
 		device_type = device_obj.dev_type
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[0]
+			cur_template = "XR Global CDP"
 		else:
-			cur_template = self.xe_temp_deploy[0]
+			cur_template = "XE Global CDP"
 
 		return self.deployTemplate(device_obj.epnm_id, cur_template)
 
@@ -242,9 +305,9 @@ class EPNM(object):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[1]
+			cur_template = "XR Interface CDP"
 		else:
-			cur_template = self.xe_temp_deploy[1]
+			cur_template = "XE Interface CDP"
 
 		for key in device_obj.getInterface():
 			if key == 'loopback0':
@@ -262,12 +325,13 @@ class EPNM(object):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[2]
+			cur_template = "XR Interface Address"
 		else:
-			cur_template = self.xe_temp_deploy[2]
+			cur_template = "XE Interface Address"
 
 		for key in device_obj.getInterface():
 			if key == 'loopback0':
+
 				continue
 			else:
 				cur_addr = device_obj.getInterface(key)
@@ -279,9 +343,9 @@ class EPNM(object):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[3]
+			cur_template = "XR Loopback Address"
 		else:
-			cur_template = self.xe_temp_deploy[3]
+			cur_template = "XE Loopback Address"
 
 		lo = device_obj.getInterface('loopback0')
 		lo_addr = lo.addr
@@ -298,25 +362,25 @@ class EPNM(object):
 			for key in device_obj.getInterface():
 
 				var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'Loopback0', lo0.addr)
-				self.deployTemplate(device_obj.epnm_id, xr_temp_deploy[4], var_load)
+				self.deployTemplate(device_obj.epnm_id, "XR Interface OSPF", var_load)
 
 		else:
 			loAddr = device_obj.getInterface('loopback0')
 			var_load = '{"name": %s, "value": %s }' % ('Loopback0', loAddr.addr)
-			self.deployTemplate(device_obj.epnm_id, self.xe_temp_deploy[4], var_load)
+			self.deployTemplate(device_obj.epnm_id, "XE Global OSPF", var_load)
 			for key in device_obj.getInterface():
 				var_load = '{"name": %s, "value": %s }' % ('interfaceName', key)
-				self.deployTemplate(device_obj.epnm_id, self.xe_temp_deploy[5], var_load)
+				self.deployTemplate(device_obj.epnm_id, "XE Interface OSPF", var_load)
 
 	def deployGlobalMPLS(self, device_obj):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[6]
+			cur_template = "XR Global MPLS"
 			lo = device_obj.getInterface('loopback0')
 			var_load = '{"name": %s, "value": %s}' % 'Loopback0', lo.addr
 		else:
-			cur_template = self.xe_temp_deploy[6]
+			cur_template = "XE Global MPLS"
 			self.deployTemplate(device_obj.epnm_id, cur_template)
 
 	def deployIntRSVP(self, device_obj, percent_value=100):
@@ -325,24 +389,24 @@ class EPNM(object):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[7]
+			cur_template = "XR Interface RSVP"
 		else:
-			cur_template = self.xe_temp_deploy[7]
+			cur_template = "XE Interface RSVP"
 
 		for key in device_obj.getInterface():
-				if key == 'loopback0':
-					continue
-				else:
-					var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'percentValue', percent_value)
-					self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
+			if key == 'loopback0':
+				continue
+			else:
+				var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'percentValue', percent_value)
+				self.deployTemplate(device_obj.epnm_id, cur_template, var_load)
 
 	def deployGlobalMPLSTE(self, device_obj):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[8]
+			cur_template = "XR Global MPLS-TE"
 		else:
-			cur_template = self.xe_temp_deploy[8]
+			cur_template = "XE Global MPLS-TE"
 
 		self.deployTemplate(device_obj.epnm_id, cur_template)
 
@@ -350,13 +414,16 @@ class EPNM(object):
 		device_type = device_obj.dev_type
 
 		if device_type == 'ASR':
-			cur_template = self.xr_temp_deploy[9]
+			cur_template = "XR Interface MPLS-TE"
 		else:
-			cur_template = self.xe_temp_deploy[9]
+			cur_template = "XE Interface MPLS-TE"
 
 		for key in device_obj.getInterface():
-			var_load = '{"name": %s, "value": %s}' % ('interfaceName', key)
-			self.deployTemplate(device_obj.epnm_id, cur_template,var_load)
+			if key == 'loopback0':
+				continue
+			else:
+				var_load = '{"name": %s, "value": %s}' % ('interfaceName', key)
+				self.deployTemplate(device_obj.epnm_id, cur_template,var_load)
 
 
 
