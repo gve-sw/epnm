@@ -4,10 +4,16 @@ import pandas as pd
 import pprint
 from epnm import EPNM
 from device import Device, ASR, NCS
+import getpass
 
-host = "198.18.134.7"
-username = "user"
-password = "Tester123"
+f = open('login.txt', 'r')
+host = f.readline()
+host = host.strip('\n')
+username = f.readline()
+f.close()
+
+password = getpass.getpass()
+
 encoded_auth = base64.b64encode(username + ":" + password)
 
 #instantiate instance of EPNM to handle API calls
@@ -20,7 +26,6 @@ connections_df = pd.read_csv('connections_test_NoASR.csv')
 #number of rows corresponds to number of devices being managed
 num_rows = dev_addr_df.shape[1]
 devices = {}
-
 
 #create one device object per iteration
 for i in range(0, num_rows):
@@ -84,6 +89,7 @@ def makeInts(conn_df, dev_dict, start):
 for j in range(0, rows):
 	makeInts(connections_df, devices, 'A')
 	makeInts(connections_df, devices, 'Z')
+
 
 #deploy the templates on the devices
 print "About to call templateDeploymentMaster"

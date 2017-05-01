@@ -37,22 +37,11 @@ class EPNM(object):
 			getURL = getURL + '/' + str(dev_id) + '.json'
 		else:
 			getURL += '.json'
-			
 
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
-
+		#print response.text
 		return response
-		'''
-	def deployTemplate(self, payload):
-		#function deploys template through a job and returns the id for the job
-		putUrl = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
 
-		response = requests.request("PUT", putUrl, data=payload, headers=self.postHeaders, verify=False)
-
-		jobName = response.json()['mgmtResponse']['cliTemplateCommandJobResult']['jobName']
-
-		return jobName
-		'''
 	def getIDfromIP(self, dev_mgmt_ip):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
@@ -179,7 +168,15 @@ class EPNM(object):
 			payload = '{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : %s }},"templateName" : %s}}' % (target_device, template_name)
 			print "no payload"
 
+		output = open('output.txt', 'a')
 		response = requests.put(putURL, headers=self.postHeaders, data=payload, verify=self.verify)
+		output.write(template_name)
+		output.write('\n')
+		output.write(target_device)
+		output.write('\n')
+		#output.write(response)
+		output.write(response.text)
+		output.write('\n\n')
 		print response.text
 		return response
 
