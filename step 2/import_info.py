@@ -97,6 +97,7 @@ file.close()
 print "About to call templateDeploymentMaster"
 manager.templateDeploymentMaster(devices)
 print "Returned from templateDeploymentMaster"
+print "Waiting for jobs to run"
 sleep(10)
 
 manager.verifyJobResult()

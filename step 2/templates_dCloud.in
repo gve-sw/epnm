@@ -1,12 +1,9 @@
-XE Global CDP
-XE Interface CDP
-XE Interface Address
-XE Loopback Address
-XE Global OSPF
-XE Interface OSPF
-XE Global MPLS
-XE Interface RSVP
-XE Global MPLS-TE
-XE Interface MPLS-TE
-
-
+Global CDP
+Interface CDP
+Interface Address
+Loopback Address
+OSPF
+Global MPLS
+Interface RSVP
+Global MPLS-TE
+Interface MPLS-TE
