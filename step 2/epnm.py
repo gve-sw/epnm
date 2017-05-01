@@ -31,7 +31,7 @@ class EPNM(object):
 
 		self.templates = []
 
-		temp_in = open('templates.in', 'r')
+		temp_in = open('templates_dCloud.in', 'r')
 		for line in temp_in:
 			line = line.rstrip('\n')
 			self.templates.append(line)
