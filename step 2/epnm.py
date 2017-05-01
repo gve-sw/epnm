@@ -141,21 +141,61 @@ class EPNM(object):
 
 		print(response.text)
 
-	def verifyJobResult(self, jobName):
+	def formatJobTime(self, first_job):
 
-		getURL = self.url + 'op/jobService/runhistory.json'
+		firstJobName = first_job.split('jobName":"')
+		firstJobName = firstJobName[1]
+		firstJobName = firstJobName.split('",')
+		#print firstJobName[0]
+		firstJobTime = firstJobName[0].split('Devices')
+		firstJobTime = firstJobTime[1]
+		#print firstJobTime
+		firstJobComponents = firstJobTime.split('_')
+		year = firstJobComponents[-1]
+		month = firstJobComponents[-3]
+		day = firstJobComponents[-2]
+		minute = firstJobComponents[1]
+		seconds = firstJobComponents[2]
+		hour = firstJobComponents[0]
 
-		querystring = {"jobName":jobName}
+		if firstJobComponents[4] == 'PM':
+			new_hour = int(hour) + 12
+			hour = str(new_hour)
 		
-		response = requests.request("GET", getURL, headers=self.getHeaders, params=querystring, verify=self.verify)
+		sysTime = year + '-' + month + '-' + day + 'T' + hour + ':' + minute + ':' + seconds
+		return sysTime		
+
+	def verifyJobResult(self):
+
+		f = open('output.txt', 'r')
+		f.readline()
+		f.readline()
+		first_job = f.readline()
+
+		first_job_time = self.formatJobTime(first_job)
+		for line in f:
+			if line == '\n':
+				continue
+			if line != '':
+				last_job = line
+
+		last_job_time = self.formatJobTime(last_job)
+		f.close()
+
+		querystring = '?jobName=startsWith("Job")&startTime=between("' + first_job_time + '","' + last_job_time + '")'
+
+		getURL = self.url + 'op/jobService/runhistory.json' + querystring
 		
-		print response.text
+		print getURL
+
+		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
 		
-		pprint(response.json())
+		g = open('runHistory.txt', 'w')
+		g.write(json.dumps(json.loads(response.text), indent=4))
+		g.close()
 
-		return response
-
-
+		return
+		
 	def deployTemplate(self, target_device, template_name, variable_payload=''):
 		putURL = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
 
@@ -190,6 +230,7 @@ class EPNM(object):
 
 
 	def templateDeploymentMaster(self, devices):
+
 
 		for template_name in self.templates:
 			for dev in devices:

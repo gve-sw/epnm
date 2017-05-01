@@ -5,6 +5,7 @@ import pprint
 from epnm import EPNM
 from device import Device, ASR, NCS
 import getpass
+from time import sleep
 
 f = open('login.txt', 'r')
 host = f.readline()
@@ -95,3 +96,6 @@ for j in range(0, rows):
 print "About to call templateDeploymentMaster"
 manager.templateDeploymentMaster(devices)
 print "Returned from templateDeploymentMaster"
+sleep(10)
+
+manager.verifyJobResult()
