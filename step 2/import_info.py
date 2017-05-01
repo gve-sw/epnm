@@ -91,7 +91,8 @@ for j in range(0, rows):
 	makeInts(connections_df, devices, 'A')
 	makeInts(connections_df, devices, 'Z')
 
-
+file = open("output.txt", "w")
+file.close()
 #deploy the templates on the devices
 print "About to call templateDeploymentMaster"
 manager.templateDeploymentMaster(devices)

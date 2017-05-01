@@ -8,7 +8,7 @@ class EPNM(object):
 
 	requests.packages.urllib3.disable_warnings()
 
-	templates = ['XE Global CDP', 'XE Interface CDP', 'XE Interface Address', 'XE Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Interface RSVP', 'XE Global MPLS-TE', 'XE Interface MPLS-TE']
+	#templates = ['XE Global CDP', 'XE Interface CDP', 'XE Interface Address', 'XE Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XE Global MPLS', 'XE Interface RSVP', 'XE Global MPLS-TE', 'XE Interface MPLS-TE']
 	#templates = ['XE Global CDP', 'XR Global CDP', 'XE Interface CDP', 'XR Interface CDP', 'XE Interface Address', 'XR Interface Address', 'XE Loopback Address', 'XR Loopback Address', 'XE Global OSPF', 'XE Interface OSPF', 'XR Interface OSPF', 'XE Global MPLS', 'XR Global MPLS', 'XE Interface RSVP', 'XR Interface RSVP', 'XE Global MPLS-TE', 'XR Global MPLS-TE', 'XE Interface MPLS-TE', 'XR Interface MPLS-TE']
 
 
@@ -28,6 +28,15 @@ class EPNM(object):
 			'cache-control': "no-cache",
 			'content-type': "application/json"
 		}
+
+		self.templates = []
+
+		temp_in = open('templates.in', 'r')
+		for line in temp_in:
+			line = line.rstrip('\n')
+			self.templates.append(line)
+		temp_in.close()
+		print self.templates
 
 	def getDevice(self, dev_id=''):
 		#function returns device info for all devices managed by EPNM at self.ip
@@ -121,27 +130,7 @@ class EPNM(object):
 
 		return response
 
-	def testVerify(self, jobName):
-
-		url = "https://198.18.134.7/webacs/api/v1/op/jobService/runhistory.json"
-
-		querystring = {"jobName":str(jobName)}
-		print querystring
-
-		#	querystring = {"jobName":"JobCliTemplateDeployIOSDevices10_27_59_612_PM_04_21_2017"}
-		#	print querystring
-
-		headers = {
-		    'authorization': "Basic dXNlcjpUZXN0ZXIxMjM=",
-		    'cache-control': "no-cache",
-		    'postman-token': "6b9fdfb0-1fa7-7698-0e16-3dab07dd3004"
-		    }
-
-		response = requests.request("GET", url, headers=headers, params=querystring, verify=False)
-
-		print(response.text)
-
-	def formatJobTime(self, first_job):
+	def formatJobTime(self, first_job, flag=False):
 
 		firstJobName = first_job.split('jobName":"')
 		firstJobName = firstJobName[1]
@@ -159,8 +148,13 @@ class EPNM(object):
 		hour = firstJobComponents[0]
 
 		if firstJobComponents[4] == 'PM':
-			new_hour = int(hour) + 12
-			hour = str(new_hour)
+			if int(hour) < 12:
+				new_hour = int(hour) + 12
+				hour = str(new_hour)
+		if flag == True:
+			int_minute = int(minute)
+			int_minute +=1
+			minute = str(int_minute)
 		
 		sysTime = year + '-' + month + '-' + day + 'T' + hour + ':' + minute + ':' + seconds
 		return sysTime		
@@ -179,7 +173,7 @@ class EPNM(object):
 			if line != '':
 				last_job = line
 
-		last_job_time = self.formatJobTime(last_job)
+		last_job_time = self.formatJobTime(last_job, True)
 		f.close()
 
 		querystring = '?jobName=startsWith("Job")&startTime=between("' + first_job_time + '","' + last_job_time + '")'
@@ -198,26 +192,28 @@ class EPNM(object):
 		
 	def deployTemplate(self, target_device, template_name, variable_payload=''):
 		putURL = self.url + 'op/cliTemplateConfiguration/deployTemplateThroughJob.json'
-
+		
 		if variable_payload != '':
 			payload = '{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : %s, "variableValues" : { "variableValue" : %s}}}, "templateName" : %s}}' % (target_device, variable_payload, template_name)
-			print "Payload is " 
-			print payload 
+			#print "Payload is " 
+			#print payload 
 
 		else:
 			payload = '{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : %s }},"templateName" : %s}}' % (target_device, template_name)
-			print "no payload"
+			#print "no payload"
+		
 
 		output = open('output.txt', 'a')
+		output.write(payload)
 		response = requests.put(putURL, headers=self.postHeaders, data=payload, verify=self.verify)
 		output.write(template_name)
 		output.write('\n')
 		output.write(target_device)
 		output.write('\n')
-		#output.write(response)
 		output.write(response.text)
 		output.write('\n\n')
-		print response.text
+		#print response.text
+		output.close()
 		return response
 
 	def currentTemplate(self, device_obj, XR_template, XE_template):
@@ -237,102 +233,34 @@ class EPNM(object):
 				if template_name == ("XE Global CDP" or "XR Global CDP"):
 					response = self.deployGlobalCDP(devices[dev])
 					print 'Deployed %s template on %s' %(template_name, dev)
-					print response
 				elif template_name == ("XE Interface CDP" or "XR Interface CDP"):
 					response = self.deployIntCDP(devices[dev])
 					print 'Deployed %s template on %s' %(template_name, dev)
-					print response
 				elif template_name == ("XE Interface Address" or "XR Interface Address"):
 					response = self.deployIntAddr(devices[dev])
 					print 'Deployed %s template on %s' %(template_name, dev)
-					print response
 				elif template_name == ("XE Loopback Address" or "XR Loopback Address"):
 					response = self.deployLoopbackAddr(devices[dev])
-					print 'Deployed %s template on %s' %(template_name, dev)
-					print response				
+					print 'Deployed %s template on %s' %(template_name, dev)			
 				elif template_name == ("XE Interface OSPF" or "XR Interface OSPF"):
 					response = self.deployOSPF(devices[dev])
 					print 'Deployed %s template on %s' %(template_name, dev)
-					print response
 				elif template_name == ("XE Global OSPF"):
 					continue #OSPF already deployed with XE Interface (see deployOSPF)
 				elif template_name == ("XE Global MPLS" or "XR Global MPLS"):
 					response = self.deployGlobalMPLS(devices[dev])
 					print 'Deployed %s template on %s' %(template_name, dev)
-					print response
 				elif template_name == ("XE Interface RSVP" or "XR Interface RSVP"):
 					response = self.deployIntRSVP(devices[dev])
-					print 'Deployed %s template on %s' %(template_name, dev)
-					print response				
+					print 'Deployed %s template on %s' %(template_name, dev)			
 				elif template_name == ("XE Global MPLS-TE" or "XR Global MPLS-TE"):
 					response = self.deployGlobalMPLSTE(devices[dev])
-					print 'Deployed %s template on %s' %(template_name, dev)
-					print response				
+					print 'Deployed %s template on %s' %(template_name, dev)			
 				elif template_name == ("XE Interface MPLS-TE" or "XR Interface MPLS-TE"):
 					response = self.deployIntMPLSTE(devices[dev])
 					print 'Deployed %s template on %s' %(template_name, dev)
-					print response
 				else:
-					print "Template Not Found"
-
-
-	'''
-		print("Deploying global CDP")
-		for dev in devices:
-			print dev
-			response = self.deployGlobalCDP(devices[dev])
-			print response
-
-		print("Deploying Int CDP")
-		for dev in devices:
-			print dev
-			response = self.deployIntCDP(devices[dev])
-			print response
-
-		print("Deploying Int Addr")
-		for dev in devices:
-			print dev
-			response = self.deployIntAddr(devices[dev])
-			print response 
-
-		print("Deploying Loopback Int")
-		for dev in devices:
-			print dev
-			response = self.deployLoopbackAddr(devices[dev])
-			print response
-
-		print("Deploying OSPF")
-		for dev in devices:
-			print dev
-			response = self.deployOSPF(devices[dev])
-			print response
-
-		print("Deploying Global MPLS")
-		for dev in devices:
-			print dev
-			response = self.deployGlobalMPLS(devices[dev])
-			print response
-
-		print("Deploying Int RSVP")
-		for dev in devices:
-			print dev
-			response = self.deployIntRSVP(devices[dev])
-			print response
-
-		print("Deploying Global MPLS-TE")
-		for dev in devices:
-			print dev
-			response = self.deployGlobalMPLSTE(devices[dev])
-			print response
-
-		print("Deploying Int MPLS-TE")
-		for dev in devices:
-			print dev
-			response = self.deployIntMPLSTE(devices[dev])
-			print response
-
-	'''
-
+					print "%s Template Not Found" %(template_name)
 
 
 
