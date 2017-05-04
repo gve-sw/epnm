@@ -1,3 +1,19 @@
+"""
+WARNING:
+This script is meant for educational purposes only.
+Any use of these scripts and tools is at
+our own risk. There is no guarantee that
+they have been through thorough testing in a
+comparable environment and we are not
+responsible for any damage or data loss
+incurred with their use.
+
+INFORMATION:
+If you have further questions about this API and script, please contact GVE. Here are the contact details:
+   For internal Cisco employees, please contact GVE at http://go2.cisco.com/gve
+   For Cisco partners, please open a case at www.cisco.com/go/ph
+"""
+
 import csv
 import base64
 import pandas as pd
@@ -97,7 +113,6 @@ file.close()
 print "About to call templateDeploymentMaster"
 manager.templateDeploymentMaster(devices)
 print "Returned from templateDeploymentMaster"
-print "Waiting for jobs to run"
 sleep(10)
 
 manager.verifyJobResult()
