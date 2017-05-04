@@ -113,6 +113,6 @@ file.close()
 print "About to call templateDeploymentMaster"
 manager.templateDeploymentMaster(devices)
 print "Returned from templateDeploymentMaster"
-sleep(10)
+sleep(30)
 
 manager.verifyJobResult()

@@ -1,0 +1,1801 @@
+{
+    "mgmtResponse": {
+        "@responseType": "operation", 
+        "job": [
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ncdp run\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ncdp run\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#cdp run\n4216-1(config)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_12_398_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:42.440-05:00", 
+                        "completionTime": "2017-05-04T12:18:43.464-05:00", 
+                        "runId": 10098001, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_12_398_PM_05_04_2017", 
+                "jobId": 10093660, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_12_917_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig4\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig4\n4206-Mid(config-if)#cdp enable\n4206-Mid(config-if)#no shutdown\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:42.961-05:00", 
+                        "completionTime": "2017-05-04T12:18:43.986-05:00", 
+                        "runId": 10098002, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_12_917_PM_05_04_2017", 
+                "jobId": 10093661, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface loopback0\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface loopback0\n4206-Mid(config-if)#ip ospf 1 area 0\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_24_721_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:54.800-05:00", 
+                        "completionTime": "2017-05-04T12:18:55.822-05:00", 
+                        "runId": 10098024, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_24_721_PM_05_04_2017", 
+                "jobId": 10093683, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_25_262_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig2\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig2\n4206-Mid(config-if)#ip ospf 1 area 0\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:55.300-05:00", 
+                        "completionTime": "2017-05-04T12:18:56.317-05:00", 
+                        "runId": 10098025, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_25_262_PM_05_04_2017", 
+                "jobId": 10093684, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_28_082_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\nrouter ospf 1\n  router-id 192.168.0.3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nrouter ospf 1\nrouter-id 192.168.0.3\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#router ospf 1\n4206-Bottom(config-router)#router-id 192.168.0.3\n4206-Bottom(config-router)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:58.125-05:00", 
+                        "completionTime": "2017-05-04T12:18:59.142-05:00", 
+                        "runId": 10098030, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_28_082_PM_05_04_2017", 
+                "jobId": 10093689, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_29_228_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface loopback0\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface loopback0\n4206-Bottom(config-if)#ip ospf 1 area 0\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:59.266-05:00", 
+                        "completionTime": "2017-05-04T12:19:00.286-05:00", 
+                        "runId": 10098032, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_29_228_PM_05_04_2017", 
+                "jobId": 10093691, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_10_832_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ncdp run\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ncdp run\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#cdp run\n4206-Mid(config)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:40.883-05:00", 
+                        "completionTime": "2017-05-04T12:18:41.901-05:00", 
+                        "runId": 10097998, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_10_832_PM_05_04_2017", 
+                "jobId": 10093657, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_13_429_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig2\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig2\n4206-Mid(config-if)#cdp enable\n4206-Mid(config-if)#no shutdown\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:43.474-05:00", 
+                        "completionTime": "2017-05-04T12:18:44.492-05:00", 
+                        "runId": 10098003, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_13_429_PM_05_04_2017", 
+                "jobId": 10093662, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_13_936_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig5\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig5\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig5\n4206-Top(config-if)#cdp enable\n4206-Top(config-if)#no shutdown\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:43.974-05:00", 
+                        "completionTime": "2017-05-04T12:18:45.006-05:00", 
+                        "runId": 10098004, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_13_936_PM_05_04_2017", 
+                "jobId": 10093663, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_14_446_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig2\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig2\n4206-Top(config-if)#cdp enable\n4206-Top(config-if)#no shutdown\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:44.488-05:00", 
+                        "completionTime": "2017-05-04T12:18:45.506-05:00", 
+                        "runId": 10098005, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_14_446_PM_05_04_2017", 
+                "jobId": 10093664, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_15_529_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig2\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig2\n4206-Bottom(config-if)#cdp enable\n4206-Bottom(config-if)#no shutdown\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:45.569-05:00", 
+                        "completionTime": "2017-05-04T12:18:46.593-05:00", 
+                        "runId": 10098007, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_15_529_PM_05_04_2017", 
+                "jobId": 10093666, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_16_052_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig4\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig4\n4216-1(config-if)#cdp enable\n4216-1(config-if)#no shutdown\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:46.098-05:00", 
+                        "completionTime": "2017-05-04T12:18:47.120-05:00", 
+                        "runId": 10098008, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_16_052_PM_05_04_2017", 
+                "jobId": 10093667, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig2\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig2\n4216-1(config-if)#cdp enable\n4216-1(config-if)#no shutdown\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_16_554_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:46.605-05:00", 
+                        "completionTime": "2017-05-04T12:18:47.623-05:00", 
+                        "runId": 10098009, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_16_554_PM_05_04_2017", 
+                "jobId": 10093668, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_17_088_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig4\n ip address 20.20.20.10 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip address 20.20.20.10 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig4\n4206-Mid(config-if)#ip address 20.20.20.10 255.255.255.252\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:47.135-05:00", 
+                        "completionTime": "2017-05-04T12:18:48.153-05:00", 
+                        "runId": 10098010, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_17_088_PM_05_04_2017", 
+                "jobId": 10093669, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_17_615_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig2\n ip address 20.20.20.13 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip address 20.20.20.13 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig2\n4206-Mid(config-if)#ip address 20.20.20.13 255.255.255.252\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:47.658-05:00", 
+                        "completionTime": "2017-05-04T12:18:48.677-05:00", 
+                        "runId": 10098011, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_17_615_PM_05_04_2017", 
+                "jobId": 10093670, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig5\n ip address 20.20.20.2 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig5\nip address 20.20.20.2 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig5\n4206-Top(config-if)#ip address 20.20.20.2 255.255.255.252\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_18_144_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:48.187-05:00", 
+                        "completionTime": "2017-05-04T12:18:49.205-05:00", 
+                        "runId": 10098012, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_18_144_PM_05_04_2017", 
+                "jobId": 10093671, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig2\n ip address 20.20.20.9 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip address 20.20.20.9 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig2\n4206-Top(config-if)#ip address 20.20.20.9 255.255.255.252\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_18_664_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:48.706-05:00", 
+                        "completionTime": "2017-05-04T12:18:49.722-05:00", 
+                        "runId": 10098013, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_18_664_PM_05_04_2017", 
+                "jobId": 10093672, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig4\n ip address 20.20.20.17 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip address 20.20.20.17 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig4\n4206-Bottom(config-if)#ip address 20.20.20.17 255.255.255.252\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_19_180_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:49.230-05:00", 
+                        "completionTime": "2017-05-04T12:18:50.249-05:00", 
+                        "runId": 10098014, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_19_180_PM_05_04_2017", 
+                "jobId": 10093673, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig2\n ip address 20.20.20.14 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip address 20.20.20.14 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig2\n4206-Bottom(config-if)#ip address 20.20.20.14 255.255.255.252\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_19_733_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:49.774-05:00", 
+                        "completionTime": "2017-05-04T12:18:51.791-05:00", 
+                        "runId": 10098015, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_19_733_PM_05_04_2017", 
+                "jobId": 10093674, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_20_293_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig4\n ip address 20.20.20.1 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip address 20.20.20.1 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig4\n4216-1(config-if)#ip address 20.20.20.1 255.255.255.252\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:51.733-05:00", 
+                        "completionTime": "2017-05-04T12:18:52.763-05:00", 
+                        "runId": 10098016, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_20_293_PM_05_04_2017", 
+                "jobId": 10093675, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_20_829_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig2\n ip address 20.20.20.18 255.255.255.252\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip address 20.20.20.18 255.255.255.252\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig2\n4216-1(config-if)#ip address 20.20.20.18 255.255.255.252\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:51.770-05:00", 
+                        "completionTime": "2017-05-04T12:18:53.790-05:00", 
+                        "runId": 10098017, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_20_829_PM_05_04_2017", 
+                "jobId": 10093676, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface loopback0\n ip address 192.168.0.5 255.255.255.255\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip address 192.168.0.5 255.255.255.255\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface loopback0\n4216-1(config-if)#ip address 192.168.0.5 255.255.255.255\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_23_079_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:53.132-05:00", 
+                        "completionTime": "2017-05-04T12:18:54.157-05:00", 
+                        "runId": 10098021, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_23_079_PM_05_04_2017", 
+                "jobId": 10093680, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_25_774_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\nrouter ospf 1\n  router-id 192.168.0.1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nrouter ospf 1\nrouter-id 192.168.0.1\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#router ospf 1\n4206-Top(config-router)#router-id 192.168.0.1\n4206-Top(config-router)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:55.831-05:00", 
+                        "completionTime": "2017-05-04T12:18:56.853-05:00", 
+                        "runId": 10098026, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_25_774_PM_05_04_2017", 
+                "jobId": 10093685, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_29_761_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig2\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig2\n4206-Bottom(config-if)#ip ospf 1 area 0\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:59.801-05:00", 
+                        "completionTime": "2017-05-04T12:19:00.822-05:00", 
+                        "runId": 10098033, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_29_761_PM_05_04_2017", 
+                "jobId": 10093692, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\nrouter ospf 1\n  router-id 192.168.0.5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nrouter ospf 1\nrouter-id 192.168.0.5\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#router ospf 1\n4216-1(config-router)#router-id 192.168.0.5\n4216-1(config-router)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_30_289_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:00.337-05:00", 
+                        "completionTime": "2017-05-04T12:19:01.360-05:00", 
+                        "runId": 10098034, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_30_289_PM_05_04_2017", 
+                "jobId": 10093693, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig2\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig2\n4206-Mid(config-if)#ip rsvp bandwidth percent 100\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_35_166_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:05.210-05:00", 
+                        "completionTime": "2017-05-04T12:19:06.230-05:00", 
+                        "runId": 10098043, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_35_166_PM_05_04_2017", 
+                "jobId": 10093702, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig5\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig5\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig5\n4206-Top(config-if)#ip rsvp bandwidth percent 100\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_35_668_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:05.710-05:00", 
+                        "completionTime": "2017-05-04T12:19:06.729-05:00", 
+                        "runId": 10098044, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_35_668_PM_05_04_2017", 
+                "jobId": 10093703, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_36_184_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig2\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig2\n4206-Top(config-if)#ip rsvp bandwidth percent 100\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:06.226-05:00", 
+                        "completionTime": "2017-05-04T12:19:07.251-05:00", 
+                        "runId": 10098045, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_36_184_PM_05_04_2017", 
+                "jobId": 10093704, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig4\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig4\n4206-Bottom(config-if)#ip rsvp bandwidth percent 100\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_36_700_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:06.738-05:00", 
+                        "completionTime": "2017-05-04T12:19:07.787-05:00", 
+                        "runId": 10098046, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_36_700_PM_05_04_2017", 
+                "jobId": 10093705, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_37_220_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig2\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig2\n4206-Bottom(config-if)#ip rsvp bandwidth percent 100\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:07.273-05:00", 
+                        "completionTime": "2017-05-04T12:19:08.290-05:00", 
+                        "runId": 10098047, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_37_220_PM_05_04_2017", 
+                "jobId": 10093706, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_37_738_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig4\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig4\n4216-1(config-if)#ip rsvp bandwidth percent 100\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:07.814-05:00", 
+                        "completionTime": "2017-05-04T12:19:08.833-05:00", 
+                        "runId": 10098049, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_37_738_PM_05_04_2017", 
+                "jobId": 10093707, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\nmpls traffic-eng tunnels\nrouter ospf 1\n  mpls traffic-eng router-id loopback0\n  mpls traffic-eng area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls traffic-eng tunnels\nrouter ospf 1\nmpls traffic-eng router-id loopback0\nmpls traffic-eng area 0\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#mpls traffic-eng tunnels\n4206-Top(config)#router ospf 1\n4206-Top(config-router)#mpls traffic-eng router-id loopback0\n4206-Top(config-router)#mpls traffic-eng area 0\n4206-Top(config-router)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_39_344_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:09.427-05:00", 
+                        "completionTime": "2017-05-04T12:19:10.449-05:00", 
+                        "runId": 10098062, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_39_344_PM_05_04_2017", 
+                "jobId": 10093710, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\nmpls traffic-eng tunnels\nrouter ospf 1\n  mpls traffic-eng router-id loopback0\n  mpls traffic-eng area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls traffic-eng tunnels\nrouter ospf 1\nmpls traffic-eng router-id loopback0\nmpls traffic-eng area 0\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#mpls traffic-eng tunnels\n4216-1(config)#router ospf 1\n4216-1(config-router)#mpls traffic-eng router-id loopback0\n4216-1(config-router)#mpls traffic-eng area 0\n4216-1(config-router)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_40_450_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:10.512-05:00", 
+                        "completionTime": "2017-05-04T12:19:11.528-05:00", 
+                        "runId": 10098074, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_40_450_PM_05_04_2017", 
+                "jobId": 10093712, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_41_007_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig4\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig4\n4206-Mid(config-if)#mpls traffic-eng tunnels\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:11.060-05:00", 
+                        "completionTime": "2017-05-04T12:19:12.088-05:00", 
+                        "runId": 10098084, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_41_007_PM_05_04_2017", 
+                "jobId": 10093713, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig2\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig2\n4206-Mid(config-if)#mpls traffic-eng tunnels\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_41_591_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:11.652-05:00", 
+                        "completionTime": "2017-05-04T12:19:12.669-05:00", 
+                        "runId": 10101092, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_41_591_PM_05_04_2017", 
+                "jobId": 10093714, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig5\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig5\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig5\n4206-Top(config-if)#mpls traffic-eng tunnels\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_42_107_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:12.160-05:00", 
+                        "completionTime": "2017-05-04T12:19:13.177-05:00", 
+                        "runId": 10101093, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_42_107_PM_05_04_2017", 
+                "jobId": 10093715, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig4\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig4\n4206-Bottom(config-if)#mpls traffic-eng tunnels\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_43_144_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:13.185-05:00", 
+                        "completionTime": "2017-05-04T12:19:14.205-05:00", 
+                        "runId": 10101095, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_43_144_PM_05_04_2017", 
+                "jobId": 10093717, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig4\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig4\n4216-1(config-if)#ip ospf 1 area 0\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_30_839_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:00.885-05:00", 
+                        "completionTime": "2017-05-04T12:19:01.907-05:00", 
+                        "runId": 10098035, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_30_839_PM_05_04_2017", 
+                "jobId": 10093694, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface loopback0\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface loopback0\n4216-1(config-if)#ip ospf 1 area 0\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_31_361_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:01.405-05:00", 
+                        "completionTime": "2017-05-04T12:19:02.424-05:00", 
+                        "runId": 10098036, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_31_361_PM_05_04_2017", 
+                "jobId": 10093695, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_31_888_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig2\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig2\n4216-1(config-if)#ip ospf 1 area 0\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:01.932-05:00", 
+                        "completionTime": "2017-05-04T12:19:03.009-05:00", 
+                        "runId": 10098037, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_31_888_PM_05_04_2017", 
+                "jobId": 10093696, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\nmpls ldp router-id loopback0\nrouter ospf 1\n  mpls ldp autoconfig\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls ldp router-id loopback0\nrouter ospf 1\nmpls ldp autoconfig\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#mpls ldp router-id loopback0\n4206-Mid(config)#router ospf 1\n4206-Mid(config-router)#mpls ldp autoconfig\n4206-Mid(config-router)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_32_413_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:02.464-05:00", 
+                        "completionTime": "2017-05-04T12:19:04.484-05:00", 
+                        "runId": 10098038, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_32_413_PM_05_04_2017", 
+                "jobId": 10093697, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_32_948_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\nmpls ldp router-id loopback0\nrouter ospf 1\n  mpls ldp autoconfig\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls ldp router-id loopback0\nrouter ospf 1\nmpls ldp autoconfig\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#mpls ldp router-id loopback0\n4206-Top(config)#router ospf 1\n4206-Top(config-router)#mpls ldp autoconfig\n4206-Top(config-router)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:03.021-05:00", 
+                        "completionTime": "2017-05-04T12:19:04.045-05:00", 
+                        "runId": 10098039, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_32_948_PM_05_04_2017", 
+                "jobId": 10093698, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\nmpls ldp router-id loopback0\nrouter ospf 1\n  mpls ldp autoconfig\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls ldp router-id loopback0\nrouter ospf 1\nmpls ldp autoconfig\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#mpls ldp router-id loopback0\n4206-Bottom(config)#router ospf 1\n4206-Bottom(config-router)#mpls ldp autoconfig\n4206-Bottom(config-router)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_33_538_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:03.589-05:00", 
+                        "completionTime": "2017-05-04T12:19:05.607-05:00", 
+                        "runId": 10098040, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_33_538_PM_05_04_2017", 
+                "jobId": 10093699, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_34_061_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\nmpls ldp router-id loopback0\nrouter ospf 1\n  mpls ldp autoconfig\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls ldp router-id loopback0\nrouter ospf 1\nmpls ldp autoconfig\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#mpls ldp router-id loopback0\n4216-1(config)#router ospf 1\n4216-1(config-router)#mpls ldp autoconfig\n4216-1(config-router)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:04.105-05:00", 
+                        "completionTime": "2017-05-04T12:19:05.126-05:00", 
+                        "runId": 10098041, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_34_061_PM_05_04_2017", 
+                "jobId": 10093700, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_34_614_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig4\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig4\n4206-Mid(config-if)#ip rsvp bandwidth percent 100\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:04.668-05:00", 
+                        "completionTime": "2017-05-04T12:19:05.695-05:00", 
+                        "runId": 10098042, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_34_614_PM_05_04_2017", 
+                "jobId": 10093701, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_38_297_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig2\nip rsvp bandwidth percent 100\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip rsvp bandwidth percent 100\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig2\n4216-1(config-if)#ip rsvp bandwidth percent 100\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:08.338-05:00", 
+                        "completionTime": "2017-05-04T12:19:09.353-05:00", 
+                        "runId": 10098051, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_38_297_PM_05_04_2017", 
+                "jobId": 10093708, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\nmpls traffic-eng tunnels\nrouter ospf 1\n  mpls traffic-eng router-id loopback0\n  mpls traffic-eng area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls traffic-eng tunnels\nrouter ospf 1\nmpls traffic-eng router-id loopback0\nmpls traffic-eng area 0\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#mpls traffic-eng tunnels\n4206-Mid(config)#router ospf 1\n4206-Mid(config-router)#mpls traffic-eng router-id loopback0\n4206-Mid(config-router)#mpls traffic-eng area 0\n4206-Mid(config-router)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_38_816_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:08.871-05:00", 
+                        "completionTime": "2017-05-04T12:19:09.895-05:00", 
+                        "runId": 10098055, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_38_816_PM_05_04_2017", 
+                "jobId": 10093709, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_39_945_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\nmpls traffic-eng tunnels\nrouter ospf 1\n  mpls traffic-eng router-id loopback0\n  mpls traffic-eng area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nmpls traffic-eng tunnels\nrouter ospf 1\nmpls traffic-eng router-id loopback0\nmpls traffic-eng area 0\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#mpls traffic-eng tunnels\n4206-Bottom(config)#router ospf 1\n4206-Bottom(config-router)#mpls traffic-eng router-id loopback0\n4206-Bottom(config-router)#mpls traffic-eng area 0\n4206-Bottom(config-router)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:10.005-05:00", 
+                        "completionTime": "2017-05-04T12:19:11.043-05:00", 
+                        "runId": 10098067, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_39_945_PM_05_04_2017", 
+                "jobId": 10093711, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_43_689_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig2\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig2\n4206-Bottom(config-if)#mpls traffic-eng tunnels\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:13.735-05:00", 
+                        "completionTime": "2017-05-04T12:19:14.760-05:00", 
+                        "runId": 10101096, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_43_689_PM_05_04_2017", 
+                "jobId": 10093718, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_44_211_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig4\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig4\n4216-1(config-if)#mpls traffic-eng tunnels\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:14.256-05:00", 
+                        "completionTime": "2017-05-04T12:19:15.274-05:00", 
+                        "runId": 10101097, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_44_211_PM_05_04_2017", 
+                "jobId": 10093719, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ncdp run\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ncdp run\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#cdp run\n4206-Top(config)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_11_351_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:41.400-05:00", 
+                        "completionTime": "2017-05-04T12:18:42.424-05:00", 
+                        "runId": 10097999, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_11_351_PM_05_04_2017", 
+                "jobId": 10093658, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_11_888_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ncdp run\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ncdp run\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#cdp run\n4206-Bottom(config)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:41.941-05:00", 
+                        "completionTime": "2017-05-04T12:18:42.958-05:00", 
+                        "runId": 10098000, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_11_888_PM_05_04_2017", 
+                "jobId": 10093659, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_14_971_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig4\ncdp enable\nno shutdown\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\ncdp enable\nno shutdown\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig4\n4206-Bottom(config-if)#cdp enable\n4206-Bottom(config-if)#no shutdown\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:45.022-05:00", 
+                        "completionTime": "2017-05-04T12:18:46.049-05:00", 
+                        "runId": 10098006, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_14_971_PM_05_04_2017", 
+                "jobId": 10093665, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_21_418_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface loopback0\n ip address 192.168.0.2 255.255.255.255\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip address 192.168.0.2 255.255.255.255\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface loopback0\n4206-Mid(config-if)#ip address 192.168.0.2 255.255.255.255\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:51.786-05:00", 
+                        "completionTime": "2017-05-04T12:18:52.804-05:00", 
+                        "runId": 10098018, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_21_418_PM_05_04_2017", 
+                "jobId": 10093677, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface loopback0\n ip address 192.168.0.1 255.255.255.255\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip address 192.168.0.1 255.255.255.255\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface loopback0\n4206-Top(config-if)#ip address 192.168.0.1 255.255.255.255\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_21_951_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:52-05:00", 
+                        "completionTime": "2017-05-04T12:18:53.020-05:00", 
+                        "runId": 10098019, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_21_951_PM_05_04_2017", 
+                "jobId": 10093678, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_22_482_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface loopback0\n ip address 192.168.0.3 255.255.255.255\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip address 192.168.0.3 255.255.255.255\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface loopback0\n4206-Bottom(config-if)#ip address 192.168.0.3 255.255.255.255\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:52.526-05:00", 
+                        "completionTime": "2017-05-04T12:18:53.545-05:00", 
+                        "runId": 10098020, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_22_482_PM_05_04_2017", 
+                "jobId": 10093679, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\nrouter ospf 1\n  router-id 192.168.0.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\nrouter ospf 1\nrouter-id 192.168.0.2\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#router ospf 1\n4206-Mid(config-router)#router-id 192.168.0.2\n4206-Mid(config-router)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_23_690_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:53.740-05:00", 
+                        "completionTime": "2017-05-04T12:18:54.757-05:00", 
+                        "runId": 10098022, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_23_690_PM_05_04_2017", 
+                "jobId": 10093681, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254261, 
+                                    "value": "configlet:\ninterface Gig4\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Mid#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Mid(config)#interface Gig4\n4206-Mid(config-if)#ip ospf 1 area 0\n4206-Mid(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_24_211_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:54.257-05:00", 
+                        "completionTime": "2017-05-04T12:18:55.276-05:00", 
+                        "runId": 10098023, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_24_211_PM_05_04_2017", 
+                "jobId": 10093682, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig5\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig5\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig5\n4206-Top(config-if)#ip ospf 1 area 0\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_26_308_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:56.350-05:00", 
+                        "completionTime": "2017-05-04T12:18:57.369-05:00", 
+                        "runId": 10098027, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_26_308_PM_05_04_2017", 
+                "jobId": 10093686, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_26_926_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface loopback0\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface loopback0\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface loopback0\n4206-Top(config-if)#ip ospf 1 area 0\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:56.964-05:00", 
+                        "completionTime": "2017-05-04T12:18:57.984-05:00", 
+                        "runId": 10098028, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_26_926_PM_05_04_2017", 
+                "jobId": 10093687, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_27_535_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig2\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig2\n4206-Top(config-if)#ip ospf 1 area 0\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:57.576-05:00", 
+                        "completionTime": "2017-05-04T12:18:58.593-05:00", 
+                        "runId": 10098029, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_27_535_PM_05_04_2017", 
+                "jobId": 10093688, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_28_688_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254256, 
+                                    "value": "configlet:\ninterface Gig4\n ip ospf 1 area 0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig4\nip ospf 1 area 0\n</cli><response><![CDATA[terminal width 0\n4206-Bottom#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Bottom(config)#interface Gig4\n4206-Bottom(config-if)#ip ospf 1 area 0\n4206-Bottom(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:18:58.730-05:00", 
+                        "completionTime": "2017-05-04T12:18:59.747-05:00", 
+                        "runId": 10098031, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_28_688_PM_05_04_2017", 
+                "jobId": 10093690, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": 1254259, 
+                                    "value": "configlet:\ninterface Gig2\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4206-Top#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4206-Top(config)#interface Gig2\n4206-Top(config-if)#mpls traffic-eng tunnels\n4206-Top(config-if)#]]></response></cliChunk></cliChunks>"
+                                }, 
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_42_627_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:12.679-05:00", 
+                        "completionTime": "2017-05-04T12:19:13.703-05:00", 
+                        "runId": 10101094, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_42_627_PM_05_04_2017", 
+                "jobId": 10093716, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }, 
+            {
+                "description": "Cli Template Deploy for IOS devices", 
+                "runInstances": {
+                    "runInstance": {
+                        "runStatus": "COMPLETED", 
+                        "results": {
+                            "result": [
+                                {
+                                    "property": "JobCliTemplateDeployIOSDevices12_18_44_728_PM_05_04_2017", 
+                                    "value": "1/1 template configurations successfully applied."
+                                }, 
+                                {
+                                    "property": 1254257, 
+                                    "value": "configlet:\ninterface Gig2\nmpls traffic-eng tunnels\n\n\n\n\n\n\n response:\n<cliChunks><cliChunk><cli>terminal width 0\nconfig t\ninterface Gig2\nmpls traffic-eng tunnels\n</cli><response><![CDATA[terminal width 0\n4216-1#config t\nEnter configuration commands, one per line.  End with CNTL/Z.\n4216-1(config)#interface Gig2\n4216-1(config-if)#mpls traffic-eng tunnels\n4216-1(config-if)#]]></response></cliChunk></cliChunks>"
+                                }
+                            ]
+                        }, 
+                        "lastStartTime": "2017-05-04T12:19:14.775-05:00", 
+                        "completionTime": "2017-05-04T12:19:15.793-05:00", 
+                        "runId": 10101098, 
+                        "resultStatus": "SUCCESS"
+                    }
+                }, 
+                "jobStatus": "COMPLETED", 
+                "jobName": "JobCliTemplateDeployIOSDevices12_18_44_728_PM_05_04_2017", 
+                "jobId": 10093720, 
+                "jobType": "CliTemplateDeployIOSDevices"
+            }
+        ], 
+        "@rootUrl": "https://198.18.134.7/webacs/api/v1/op", 
+        "@requestUrl": "https://198.18.134.7/webacs/api/v1/op/jobService/runhistory?jobName=startsWith(%22Job%22)&amp;startTime=between(%222017-05-04T12:18:10%22,%222017-05-04T12:19:44%22)"
+    }
+}

@@ -202,6 +202,30 @@ class EPNM(object):
 		g.write(json.dumps(json.loads(response.text), indent=4))
 		g.close()
 
+		jobList = response.json()['mgmtResponse']['job']
+		#print jobList
+
+		success_count = 0
+		fail_count = 0
+
+		for dictionary in jobList:
+			result = dictionary['runInstances']['runInstance']
+			for key in result:
+				#print key
+				#print result[key]
+				if key == 'resultStatus':
+					result_status = result[key]
+			#result_status = result['resultStatus']
+			if result_status == 'SUCCESS':
+				success_count +=1
+			elif result_status == 'FAILURE':
+				fail_count +=1
+
+		total = success_count + fail_count
+		print "Total jobs run: " + str(total)
+		print "Success: " + str(success_count)
+		print "Failure: " + str(fail_count)
+
 		return
 		
 	def deployTemplate(self, target_device, template_name, variable_payload=''):
