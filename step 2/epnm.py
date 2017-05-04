@@ -12,6 +12,11 @@ INFORMATION:
 If you have further questions about this API and script, please contact GVE. Here are the contact details:
    For internal Cisco employees, please contact GVE at http://go2.cisco.com/gve
    For Cisco partners, please open a case at www.cisco.com/go/ph
+
+TEMPLATE ADDITIONS:
+	Scroll down to the near bottom named "templateDeployMaster"
+	From there you will see instructions to add a template function
+
 """
 
 import requests
@@ -260,7 +265,17 @@ class EPNM(object):
 		else:
 			cur_template = XE_template
 		return cur_template
+'''
+****************************************************************************************
+Edit below for changes/additions to template deployments
+Under templateDeploymentMaster create another "elif" statement before the "else"
+The elif name will need to match what is called within the templates.in file
+Then write a "response = self.____________(devices[dev])"
+The blank space will be the function called that will need to be written below
 
+For each template you wish to deploy, you will need to create one of these statements
+****************************************************************************************
+'''
 
 	def templateDeploymentMaster(self, devices):
 		for template_name in self.templates:
@@ -286,6 +301,26 @@ class EPNM(object):
 				else:
 					print "%s Template Not Found" %(template_name)
 
+'''
+************************************************************************************************************
+Below are the individual template deployment functions.
+
+The standard deployment consists of:
+	def ______________(self, device_obj):
+		cur_template = self.currentTemplate(device_obj, "XR ____________", "XE ____________")
+
+		return self.deployTemplate(device_obj, cur_template)
+
+Additional coding may be required if the template utilizes variables such as IP addresses or interface names
+See "deployIntCDP" as an example
+
+The XR ________ or XE _________ names will have to exactly match the template name loaded within the EPNM
+currentTemplate is a function that discovers the device type and selects which template to deploy
+
+You will need to create a new function for each template you wish to deploy
+**************************************************************************************************************
+
+'''
 
 
 	def deployGlobalCDP(self, device_obj):
