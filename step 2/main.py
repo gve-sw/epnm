@@ -37,8 +37,8 @@ encoded_auth = base64.b64encode(username + ":" + password)
 manager = EPNM(host, encoded_auth)
 
 #load the device and connections info from provided CSV files
-dev_addr_df = pd.read_csv('dev_address_test_NoASR.csv')
-connections_df = pd.read_csv('connections_test_NoASR.csv')
+dev_addr_df = pd.read_csv('Dev_TME_Storm_9kAlone.csv')
+connections_df = pd.read_csv('Con_TME_Storm_9kAlone.csv')
 
 #number of rows corresponds to number of devices being managed
 num_rows = dev_addr_df.shape[1]
