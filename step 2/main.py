@@ -12,6 +12,10 @@ INFORMATION:
 If you have further questions about this API and script, please contact GVE. Here are the contact details:
    For internal Cisco employees, please contact GVE at http://go2.cisco.com/gve
    For Cisco partners, please open a case at www.cisco.com/go/ph
+
+For execution: Run this script as "python main.py"
+You will be prompted for a password that matches your username listed in the login.txt
+This program will then deploy the templates listed from the templates.txt, to the devices listed in the devices.csv
 """
 
 import csv
@@ -37,8 +41,8 @@ encoded_auth = base64.b64encode(username + ":" + password)
 manager = EPNM(host, encoded_auth)
 
 #load the device and connections info from provided CSV files
-dev_addr_df = pd.read_csv('sjc04_devAddr.csv')
-connections_df = pd.read_csv('sjc04_connections.csv')
+dev_addr_df = pd.read_csv('devices.csv')
+connections_df = pd.read_csv('connections.csv')
 
 #number of rows corresponds to number of devices being managed
 num_rows = dev_addr_df.shape[1]
