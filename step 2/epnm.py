@@ -63,7 +63,7 @@ class EPNM(object):
 		if dev_id != '':
 			getURL = getURL + '/' + str(dev_id) + '.json'
 		else:
-			getURL += '.json'
+			getURL += '.json?.firstResult=0&.maxResults=400'
 
 		response = requests.get(getURL, headers=self.getHeaders, verify=self.verify)
 		#print response.text
@@ -73,12 +73,18 @@ class EPNM(object):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
 		dev_id_list = self.getDevIDs(dev_list_json)
+		print dev_id_list
+		count = 0
 
-		for i in dev_id_list:
+		for i in reversed(dev_id_list):
 			dev_info_json = self.getDevice(i)
 			resp_list = dev_info_json.json()['queryResponse']['entity']
 			dev_info_dict = resp_list[0]['devicesDTO']
+			print "run through dev id list %s" %(dev_info_dict)
+			count = count+1
+			print "This device is %s" %(count)
 			if dev_info_dict['ipAddress'] == dev_mgmt_ip:
+				print "Found device"
 				return dev_info_dict['@id']
 		
 		print '\n \n \n'

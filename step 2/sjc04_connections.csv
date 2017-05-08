@@ -1,0 +1,6 @@
+Device,A Port,IP,IP,Z Port,Device
+sjc-asr9006-a,GigabitEthernet0/1/1/0,10.10.10.9,10.10.10.10,GigabitEthernet0/0/0,sjc-ncs4206-a
+sjc-asr9006-a,GigabitEthernet0/1/1/2,10.10.10.17,10.10.10.18,GigabitEthernet0/0/0,sjc-ncs4206-c
+sjc-ncs4206-a,GigabitEthernet0/0/1,20.20.20.9,20.20.20.10,GigabitEthernet0/0/2,sjc-ncs4206-b
+sjc-asr9006-a,GigabitEthernet0/1/1/1,10.10.10.13,10.10.10.14,GigabitEthernet0/0/0,sjc-ncs4206-b
+sjc-ncs4206-b,GigabitEthernet0/0/1,20.20.20.13,20.20.20.14,GigabitEthernet0/0/1,sjc-ncs4206-c

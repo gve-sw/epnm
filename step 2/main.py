@@ -37,14 +37,15 @@ encoded_auth = base64.b64encode(username + ":" + password)
 manager = EPNM(host, encoded_auth)
 
 #load the device and connections info from provided CSV files
-dev_addr_df = pd.read_csv('Dev_TME_Storm_9kAlone.csv')
-connections_df = pd.read_csv('Con_TME_Storm_9kAlone.csv')
+dev_addr_df = pd.read_csv('sjc04_devAddr.csv')
+connections_df = pd.read_csv('sjc04_connections.csv')
 
 #number of rows corresponds to number of devices being managed
 num_rows = dev_addr_df.shape[1]
 devices = {}
 
 #create one device object per iteration
+print "Finding devices now. May take several minutes depending on amount of devices in EPNM"
 for i in range(0, num_rows):
 	#get the information provided in the dev_address CSV file
 	device_name = dev_addr_df.loc[i]['Device Name']
