@@ -1,256 +1,292 @@
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254261 }},"templateName" : XE Global CDP}}XE Global CDP
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_50_075_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401323 }},"templateName" : XR Global CDP}}XR Global CDP
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_15_993_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254259 }},"templateName" : XE Global CDP}}XE Global CDP
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_50_657_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401328 }},"templateName" : XE Global CDP}}XE Global CDP
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_16_916_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254256 }},"templateName" : XE Global CDP}}XE Global CDP
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_51_242_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 255535280 }},"templateName" : XE Global CDP}}XE Global CDP
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_17_961_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254257 }},"templateName" : XE Global CDP}}XE Global CDP
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_51_821_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401324 }},"templateName" : XE Global CDP}}XE Global CDP
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_18_851_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_52_479_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/1/1/1"}}}}, "templateName" : XR Interface CDP}}XR Interface CDP
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_19_809_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_53_015_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/1/1/0"}}}}, "templateName" : XR Interface CDP}}XR Interface CDP
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_20_656_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig5 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_53_551_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/1/1/2"}}}}, "templateName" : XR Interface CDP}}XR Interface CDP
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_21_609_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_54_093_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/0/0"}}}}, "templateName" : XE Interface CDP}}XE Interface CDP
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_22_562_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_54_671_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/0/1"}}}}, "templateName" : XE Interface CDP}}XE Interface CDP
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_23_491_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_55_201_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/0/2"}}}}, "templateName" : XE Interface CDP}}XE Interface CDP
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_24_356_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_55_719_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/0/0"}}}}, "templateName" : XE Interface CDP}}XE Interface CDP
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_25_216_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface CDP}}XE Interface CDP
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_56_235_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/0/1"}}}}, "templateName" : XE Interface CDP}}XE Interface CDP
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_26_139_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig4}, {"name": ipAddress, "value": 20.20.20.10}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_56_802_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/0/0"}}}}, "templateName" : XE Interface CDP}}XE Interface CDP
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_27_108_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": ipAddress, "value": 20.20.20.13}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_57_328_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name":"interfaceName","value":"gig 0/0/1"}}}}, "templateName" : XE Interface CDP}}XE Interface CDP
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_28_048_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig5}, {"name": ipAddress, "value": 20.20.20.2}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_57_880_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/1"}, {"name": "ipAddress", "value": "10.10.10.13"}]}}}, "templateName" : XR Interface Address}}XR Interface Address
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_28_896_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": ipAddress, "value": 20.20.20.9}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_58_406_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/0"}, {"name": "ipAddress", "value": "10.10.10.9"}]}}}, "templateName" : XR Interface Address}}XR Interface Address
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_29_857_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig4}, {"name": ipAddress, "value": 20.20.20.17}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_58_988_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/2"}, {"name": "ipAddress", "value": "10.10.10.17"}]}}}, "templateName" : XR Interface Address}}XR Interface Address
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_30_714_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": ipAddress, "value": 20.20.20.14}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_20_59_564_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/0"}, {"name": "ipAddress", "value": "10.10.10.18"}]}}}, "templateName" : XE Interface Address}}XE Interface Address
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_31_604_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig4}, {"name": ipAddress, "value": 20.20.20.1}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_00_094_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/1"}, {"name": "ipAddress", "value": "20.20.20.14"}]}}}, "templateName" : XE Interface Address}}XE Interface Address
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_32_463_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": ipAddress, "value": 20.20.20.18}]}}}, "templateName" : XE Interface Address}}XE Interface Address
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_00_680_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/2"}, {"name": "ipAddress", "value": "20.20.20.10"}]}}}, "templateName" : XE Interface Address}}XE Interface Address
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_33_370_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.2 }}}}, "templateName" : XE Loopback Address}}XE Loopback Address
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_01_244_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/0"}, {"name": "ipAddress", "value": "10.10.10.14"}]}}}, "templateName" : XE Interface Address}}XE Interface Address
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_34_338_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.1 }}}}, "templateName" : XE Loopback Address}}XE Loopback Address
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_01_791_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/1"}, {"name": "ipAddress", "value": "20.20.20.13"}]}}}, "templateName" : XE Interface Address}}XE Interface Address
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_35_216_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.3 }}}}, "templateName" : XE Loopback Address}}XE Loopback Address
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_02_367_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/0"}, {"name": "ipAddress", "value": "10.10.10.10"}]}}}, "templateName" : XE Interface Address}}XE Interface Address
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_36_278_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.5 }}}}, "templateName" : XE Loopback Address}}XE Loopback Address
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_02_949_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/1"}, {"name": "ipAddress", "value": "20.20.20.9"}]}}}, "templateName" : XE Interface Address}}XE Interface Address
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_37_185_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.2 }}}}, "templateName" : XE Global OSPF}}XE Global OSPF
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_03_456_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.7" }}}}, "templateName" : XR Loopback Address}}XR Loopback Address
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_38_081_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_03_974_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.3" }}}}, "templateName" : XE Loopback Address}}XE Loopback Address
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_38_916_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": interfaceName, "value": loopback0 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_04_553_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.2" }}}}, "templateName" : XE Loopback Address}}XE Loopback Address
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_39_824_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_05_144_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.1" }}}}, "templateName" : XE Loopback Address}}XE Loopback Address
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_40_744_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.1 }}}}, "templateName" : XE Global OSPF}}XE Global OSPF
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_05_667_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/1"}, {"name": "Loopback0", "value": "192.168.4.7"}]}}}, "templateName" : XR Interface OSPF}}XR Interface OSPF
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_41_566_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig5 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_06_194_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/0"}, {"name": "Loopback0", "value": "192.168.4.7"}]}}}, "templateName" : XR Interface OSPF}}XR Interface OSPF
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_42_624_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": interfaceName, "value": loopback0 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_06_726_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/2"}, {"name": "Loopback0", "value": "192.168.4.7"}]}}}, "templateName" : XR Interface OSPF}}XR Interface OSPF
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_43_447_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_07_237_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "loopback0"}, {"name": "Loopback0", "value": "192.168.4.7"}]}}}, "templateName" : XR Interface OSPF}}XR Interface OSPF
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_44_388_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.3 }}}}, "templateName" : XE Global OSPF}}XE Global OSPF
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_07_740_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.3" }}}}, "templateName" : XE Global OSPF}}XE Global OSPF
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_45_209_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_08_260_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/0" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_46_149_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": interfaceName, "value": loopback0 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_08_783_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/1" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_46_991_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_09_300_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "loopback0" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_47_913_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": Loopback0, "value": 192.168.0.5 }}}}, "templateName" : XE Global OSPF}}XE Global OSPF
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_09_838_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.2" }}}}, "templateName" : XE Global OSPF}}XE Global OSPF
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_48_815_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_10_376_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/2" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_49_641_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": interfaceName, "value": loopback0 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_10_889_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/0" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_50_565_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2 }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_11_392_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/1" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_51_435_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254261 }},"templateName" : XE Global MPLS}}XE Global MPLS
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_11_907_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "loopback0" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_52_503_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254259 }},"templateName" : XE Global MPLS}}XE Global MPLS
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_12_480_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.1" }}}}, "templateName" : XE Global OSPF}}XE Global OSPF
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_53_359_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254256 }},"templateName" : XE Global MPLS}}XE Global MPLS
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_13_024_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/0" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_54_216_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254257 }},"templateName" : XE Global MPLS}}XE Global MPLS
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_20_848_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/1" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_55_107_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig4}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_21_600_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "loopback0" }}}}, "templateName" : XE Interface OSPF}}XE Interface OSPF
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_56_030_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_22_243_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name": "Loopback0", "value": "192.168.4.7"}}}}, "templateName" : XR Global MPLS}}XR Global MPLS
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_57_034_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig5}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_22_816_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401328 }},"templateName" : XE Global MPLS}}XE Global MPLS
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_57_967_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_23_456_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 255535280 }},"templateName" : XE Global MPLS}}XE Global MPLS
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_58_926_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig4}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_24_072_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401324 }},"templateName" : XE Global MPLS}}XE Global MPLS
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_51_59_797_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_24_603_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/1"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XR Interface RSVP}}XR Interface RSVP
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_00_713_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig4}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_25_206_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/0"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XR Interface RSVP}}XR Interface RSVP
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_01_701_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : [{"name": interfaceName, "value": Gig2}, {"name": percentValue, "value": 100}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_25_753_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/1/1/2"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XR Interface RSVP}}XR Interface RSVP
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_02_602_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254261 }},"templateName" : XE Global MPLS-TE}}XE Global MPLS-TE
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_26_289_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/0"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_03_490_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254259 }},"templateName" : XE Global MPLS-TE}}XE Global MPLS-TE
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_26_810_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/1"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_04_440_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254256 }},"templateName" : XE Global MPLS-TE}}XE Global MPLS-TE
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_27_337_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/2"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_05_341_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 1254257 }},"templateName" : XE Global MPLS-TE}}XE Global MPLS-TE
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_27_859_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/0"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_06_441_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_28_386_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/1"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_07_371_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254261, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4206-Mid
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_29_045_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/0"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_08_326_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig5}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_29_667_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : [{"name": "interfaceName", "value": "gig 0/0/1"}, {"name": "percentValue", "value": "100"}]}}}, "templateName" : XE Interface RSVP}}XE Interface RSVP
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_09_183_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254259, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4206-Top
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_30_206_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401323 }},"templateName" : XR Global MPLS-TE}}XR Global MPLS-TE
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_10_028_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_30_739_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401328 }},"templateName" : XE Global MPLS-TE}}XE Global MPLS-TE
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_11_022_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254256, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4206-Bottom
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_31_259_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 255535280 }},"templateName" : XE Global MPLS-TE}}XE Global MPLS-TE
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_11_978_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig4}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_31_784_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : 112401324 }},"templateName" : XE Global MPLS-TE}}XE Global MPLS-TE
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_12_891_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 
-{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 1254257, "variableValues" : { "variableValue" : {"name": interfaceName, "value": Gig2}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
-4216-1
-{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/198.18.134.7\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices01_21_32_316_PM_05_04_2017","message":"An deploy job has been successfully created. "}}}
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/1/1/1"}}}}, "templateName" : XR Interface MPLS-TE}}XR Interface MPLS-TE
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_13_805_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/1/1/0"}}}}, "templateName" : XR Interface MPLS-TE}}XR Interface MPLS-TE
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_14_665_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401323, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/1/1/2"}}}}, "templateName" : XR Interface MPLS-TE}}XR Interface MPLS-TE
+sjc-asr9006-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_15_557_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/0"}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_16_437_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401328, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/1"}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
+sjc-ncs4206-c
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_17_283_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/2"}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_18_278_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/0"}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_19_185_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 255535280, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/1"}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
+sjc-ncs4206-b
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_20_106_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/0"}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_20_985_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
+
+{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : 112401324, "variableValues" : { "variableValue" : {"name": "interfaceName", "value": "gig 0/0/1"}}}}, "templateName" : XE Interface MPLS-TE}}XE Interface MPLS-TE
+sjc-ncs4206-a
+{"mgmtResponse":{"@responseType":"operation","@requestUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op\/cliTemplateConfiguration\/deployTemplateThroughJob","@rootUrl":"https:\/\/tme-storm\/webacs\/api\/v1\/op","cliTemplateCommandJobResult":{"jobName":"JobCliTemplateDeployIOSDevices02_52_21_981_PM_05_08_2017","message":"An deploy job has been successfully created. "}}}
 

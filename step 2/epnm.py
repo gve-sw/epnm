@@ -343,8 +343,9 @@ class EPNM(object):
 				continue
 			else:
 				cur_inter = device_obj.getInterface(key)
-				var_load = '{"name": %s, "value": %s }' % ('interfaceName', cur_inter.name)
+				var_load = '{"name":"%s","value":"%s"}' % ('interfaceName', cur_inter.name)
 				response = self.deployTemplate(device_obj, cur_template, var_load)
+				print response.text
 				#need to insert check here to make sure the response is positive
 
 		return response
@@ -358,7 +359,7 @@ class EPNM(object):
 			else:
 				cur_addr = device_obj.getInterface(key)
 				cur_addr_str = cur_addr.addr
-				var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'ipAddress', cur_addr_str)
+				var_load = '[{"name": "%s", "value": "%s"}, {"name": "%s", "value": "%s"}]' % ('interfaceName', key, 'ipAddress', cur_addr_str)
 				self.deployTemplate(device_obj, cur_template, var_load)
 
 	def deployLoopbackAddr(self, device_obj):
@@ -366,7 +367,7 @@ class EPNM(object):
 
 		lo = device_obj.getInterface('loopback0')
 		lo_addr = lo.addr
-		var_load = '{"name": %s, "value": %s }' % ('Loopback0', lo_addr)
+		var_load = '{"name": "%s", "value": "%s" }' % ('Loopback0', lo_addr)
 
 		return self.deployTemplate(device_obj, cur_template, var_load)
 
@@ -378,15 +379,15 @@ class EPNM(object):
 			lo0 = device_obj.getInterface('loopback0')
 			for key in device_obj.getInterface():
 
-				var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'Loopback0', lo0.addr)
+				var_load = '[{"name": "%s", "value": "%s"}, {"name": "%s", "value": "%s"}]' % ('interfaceName', key, 'Loopback0', lo0.addr)
 				self.deployTemplate(device_obj, "XR Interface OSPF", var_load)
 
 		else:
 			loAddr = device_obj.getInterface('loopback0')
-			var_load = '{"name": %s, "value": %s }' % ('Loopback0', loAddr.addr)
+			var_load = '{"name": "%s", "value": "%s" }' % ('Loopback0', loAddr.addr)
 			self.deployTemplate(device_obj, "XE Global OSPF", var_load)
 			for key in device_obj.getInterface():
-				var_load = '{"name": %s, "value": %s }' % ('interfaceName', key)
+				var_load = '{"name": "%s", "value": "%s" }' % ('interfaceName', key)
 				self.deployTemplate(device_obj, "XE Interface OSPF", var_load)
 
 	def deployGlobalMPLS(self, device_obj):
@@ -395,7 +396,7 @@ class EPNM(object):
 
 		if device_type == 'ASR':
 			lo = device_obj.getInterface('loopback0')
-			var_load = '{"name": %s, "value": %s}' % ('Loopback0', lo.addr)
+			var_load = '{"name": "%s", "value": "%s"}' % ('Loopback0', lo.addr)
 			self.deployTemplate(device_obj, cur_template, var_load)
 		else:
 			self.deployTemplate(device_obj, cur_template)
@@ -409,7 +410,7 @@ class EPNM(object):
 			if key == 'loopback0':
 				continue
 			else:
-				var_load = '[{"name": %s, "value": %s}, {"name": %s, "value": %s}]' % ('interfaceName', key, 'percentValue', percent_value)
+				var_load = '[{"name": "%s", "value": "%s"}, {"name": "%s", "value": "%s"}]' % ('interfaceName', key, 'percentValue', percent_value)
 				self.deployTemplate(device_obj, cur_template, var_load)
 
 	def deployGlobalMPLSTE(self, device_obj):
@@ -424,7 +425,7 @@ class EPNM(object):
 			if key == 'loopback0':
 				continue
 			else:
-				var_load = '{"name": %s, "value": %s}' % ('interfaceName', key)
+				var_load = '{"name": "%s", "value": "%s"}' % ('interfaceName', key)
 				self.deployTemplate(device_obj, cur_template,var_load)
 
 
