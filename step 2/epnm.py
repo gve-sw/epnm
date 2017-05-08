@@ -73,18 +73,12 @@ class EPNM(object):
 		#function takes manamgement ip address for a device and returns the unique EPNM ID
 		dev_list_json = self.getDevice()
 		dev_id_list = self.getDevIDs(dev_list_json)
-		print dev_id_list
-		count = 0
 
 		for i in reversed(dev_id_list):
 			dev_info_json = self.getDevice(i)
 			resp_list = dev_info_json.json()['queryResponse']['entity']
 			dev_info_dict = resp_list[0]['devicesDTO']
-			print "run through dev id list %s" %(dev_info_dict)
-			count = count+1
-			print "This device is %s" %(count)
 			if dev_info_dict['ipAddress'] == dev_mgmt_ip:
-				print "Found device"
 				return dev_info_dict['@id']
 		
 		print '\n \n \n'
@@ -218,6 +212,7 @@ class EPNM(object):
 
 		success_count = 0
 		fail_count = 0
+		still_going = 0
 
 		for dictionary in jobList:
 			result = dictionary['runInstances']['runInstance']
@@ -231,11 +226,14 @@ class EPNM(object):
 				success_count +=1
 			elif result_status == 'FAILURE':
 				fail_count +=1
+			else:
+				still_going +=1
 
 		total = success_count + fail_count
 		print "Total jobs run: " + str(total)
 		print "Success: " + str(success_count)
 		print "Failure: " + str(fail_count)
+		print "Still going: " + str(still_going)
 
 		return
 		
@@ -244,8 +242,7 @@ class EPNM(object):
 		
 		if variable_payload != '':
 			payload = '{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : { "targetDeviceID" : %s, "variableValues" : { "variableValue" : %s}}}, "templateName" : %s}}' % (target_device.epnm_id, variable_payload, template_name)
-			#print "Payload is " 
-			#print payload 
+
 
 		else:
 			payload = '{ "cliTemplateCommand" : { "targetDevices" : { "targetDevice" : {"targetDeviceID" : %s }},"templateName" : %s}}' % (target_device.epnm_id, template_name)
@@ -343,9 +340,8 @@ class EPNM(object):
 				continue
 			else:
 				cur_inter = device_obj.getInterface(key)
-				var_load = '{"name":"%s","value":"%s"}' % ('interfaceName', cur_inter.name)
+				var_load = '{"name": "%s", "value": "%s"}' % ('interfaceName', cur_inter.name)
 				response = self.deployTemplate(device_obj, cur_template, var_load)
-				print response.text
 				#need to insert check here to make sure the response is positive
 
 		return response
@@ -367,7 +363,7 @@ class EPNM(object):
 
 		lo = device_obj.getInterface('loopback0')
 		lo_addr = lo.addr
-		var_load = '{"name": "%s", "value": "%s" }' % ('Loopback0', lo_addr)
+		var_load = '{"name": "%s", "value": "%s"}' % ('Loopback0', lo_addr)
 
 		return self.deployTemplate(device_obj, cur_template, var_load)
 
