@@ -45,7 +45,7 @@ num_rows = dev_addr_df.shape[1]
 devices = {}
 
 #create one device object per iteration
-print "Finding devices now. May take several minutes depending on amount of devices in EPNM"
+print "\n Finding devices now. May take several minutes depending on amount of devices in EPNM \n"
 for i in range(0, num_rows):
 	#get the information provided in the dev_address CSV file
 	device_name = dev_addr_df.loc[i]['Device Name']
@@ -114,6 +114,7 @@ file.close()
 print "About to call templateDeploymentMaster"
 manager.templateDeploymentMaster(devices)
 print "Returned from templateDeploymentMaster"
+print '\n Waiting for jobs to finish \n'
 sleep(30)
 
 manager.verifyJobResult()

@@ -233,7 +233,7 @@ class EPNM(object):
 		print "Total jobs run: " + str(total)
 		print "Success: " + str(success_count)
 		print "Failure: " + str(fail_count)
-		print "Still going: " + str(still_going)
+		print "Still Running: " + str(still_going)
 
 		return
 		
