@@ -28,7 +28,7 @@ You will find the corresponding folders for each step.
 
 
 ### API Documentation
-* [Cisco Evolved Programmable Network Manager 2.0 - Programming Guides] (http://www.cisco.com/c/en/us/support/cloud-systems-management/evolved-programmable-network-epn-manager/products-programming-reference-guides-list.html)
+* [Cisco Evolved Programmable Network Manager 2.0 - Programming Guides](http://www.cisco.com/c/en/us/support/cloud-systems-management/evolved-programmable-network-epn-manager/products-programming-reference-guides-list.html)
 
 
 ### Sample Application - CE MPLS Turn-Up Process
