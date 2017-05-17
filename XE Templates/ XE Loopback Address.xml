@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><ootb-template>
+    <template-metadata name="XE Loopback Address">
+        <template-details>
+            <description/>
+            <author>root</author>
+            <tag-list/><tag-list/>
+        </template-details>
+        <parameter-metadata>
+            <param-group cliName="cli command set" isMandatory="true" name="XE Loopback Address parameters">
+                <description>Parameters for XE Loopback Address</description>
+                <parameter name="Loopback0">
+                    <description>Loopback0</description>
+                    <default-value label="Loopback 0 Address"/>
+                    <data-type>IPv4 Address</data-type>
+                    <mandatory>true</mandatory>
+                    <isGlobal>false</isGlobal>
+                    <syntax>
+                        <pattern/>
+                    </syntax>
+                    <isGlobalVariable>false</isGlobalVariable>
+                </parameter>
+            </param-group>
+        </parameter-metadata>
+    </template-metadata>
+    <config>
+        <device-filtering-details>
+            <family value="Routers,Optical Networking">
+                <min-supported-imageversion value=""/>
+            </family>
+        </device-filtering-details>
+        <cli name="cli command set">
+            <clicommand>interface loopback0
+ ip address $Loopback0 255.255.255.255
+
+
+
+
+
+
+
+
+
+
+</clicommand>
+        </cli>
+    </config>
+</ootb-template>

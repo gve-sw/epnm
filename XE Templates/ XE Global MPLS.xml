@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><ootb-template>
+    <template-metadata name="XE Global MPLS">
+        <template-details>
+            <description/>
+            <author>root</author>
+            <tag-list/><tag-list/>
+        </template-details>
+        <parameter-metadata>
+            <param-group cliName="cli command set" isMandatory="true" name="XE Global MPLS parameters">
+                <description>Parameters for XE Global MPLS</description>
+            </param-group>
+        </parameter-metadata>
+    </template-metadata>
+    <config>
+        <device-filtering-details>
+            <family value="Routers,Optical Networking">
+                <min-supported-imageversion value=""/>
+            </family>
+        </device-filtering-details>
+        <cli name="cli command set">
+            <clicommand>mpls ldp router-id loopback0
+router ospf 1
+  mpls ldp autoconfig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</clicommand>
+        </cli>
+    </config>
+</ootb-template>

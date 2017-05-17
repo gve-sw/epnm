@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><ootb-template>
+    <template-metadata name="XE Interface Address">
+        <template-details>
+            <description/>
+            <author>root</author>
+            <tag-list/><tag-list/>
+        </template-details>
+        <parameter-metadata>
+            <param-group cliName="cli command set" isMandatory="true" name="XE Interface Address parameters">
+                <description>Parameters for XE Interface Address</description>
+                <parameter name="ipAddress">
+                    <description>ipAddress</description>
+                    <default-value label=""/>
+                    <data-type>IPv4 Address</data-type>
+                    <mandatory>true</mandatory>
+                    <isGlobal>false</isGlobal>
+                    <syntax>
+                        <pattern/>
+                    </syntax>
+                    <isGlobalVariable>false</isGlobalVariable>
+                </parameter>
+                <parameter name="interfaceName">
+                    <description>interfaceName</description>
+                    <default-value label=""/>
+                    <data-type>String</data-type>
+                    <mandatory>true</mandatory>
+                    <isGlobal>false</isGlobal>
+                    <syntax>
+                        <pattern/>
+                    </syntax>
+                    <isGlobalVariable>false</isGlobalVariable>
+                </parameter>
+            </param-group>
+        </parameter-metadata>
+    </template-metadata>
+    <config>
+        <device-filtering-details>
+            <family value="Routers,Optical Networking">
+                <min-supported-imageversion value=""/>
+            </family>
+        </device-filtering-details>
+        <cli name="cli command set">
+            <clicommand>interface $interfaceName
+ ip address $ipAddress 255.255.255.252
+
+
+
+
+
+
+
+
+
+
+
+
+
+</clicommand>
+        </cli>
+    </config>
+</ootb-template>

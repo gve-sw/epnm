@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><ootb-template>
+    <template-metadata name="XE Interface CDP">
+        <template-details>
+            <description/>
+            <author>root</author>
+            <tag-list/><tag-list/>
+        </template-details>
+        <parameter-metadata>
+            <param-group cliName="cli command set" isMandatory="true" name="XE Interface CDP parameters">
+                <description>Parameters for XE Interface CDP</description>
+                <parameter name="interfaceName">
+                    <description>interfaceName</description>
+                    <default-value label=""/>
+                    <data-type>String</data-type>
+                    <mandatory>true</mandatory>
+                    <isGlobal>false</isGlobal>
+                    <syntax>
+                        <pattern/>
+                    </syntax>
+                    <isGlobalVariable>false</isGlobalVariable>
+                </parameter>
+            </param-group>
+        </parameter-metadata>
+    </template-metadata>
+    <config platform="undefined">
+        <device-filtering-details>
+            <family value="Optical Networking">
+                <min-supported-imageversion value=""/>
+            </family>
+            <family value="Routers">
+                <min-supported-imageversion value=""/>
+            </family>
+        </device-filtering-details>
+        <cli name="cli command set">
+            <clicommand>interface $interfaceName
+cdp enable
+no shutdown
+#end
+
+
+</clicommand>
+        </cli>
+    </config>
+</ootb-template>

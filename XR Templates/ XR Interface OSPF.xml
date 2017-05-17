@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><ootb-template>
+    <template-metadata name="XR Interface OSPF">
+        <template-details>
+            <description/>
+            <author>root</author>
+            <tag-list/><tag-list/>
+        </template-details>
+        <parameter-metadata>
+            <param-group cliName="cli command set" isMandatory="true" name="XR Interface OSPF parameters">
+                <description>Parameters for XR Interface OSPF</description>
+                <parameter name="Loopback0">
+                    <description>Loopback0</description>
+                    <default-value label="Loopback0 Address"/>
+                    <data-type>IPv4 Address</data-type>
+                    <mandatory>true</mandatory>
+                    <isGlobal>false</isGlobal>
+                    <syntax>
+                        <pattern/>
+                    </syntax>
+                    <isGlobalVariable>false</isGlobalVariable>
+                </parameter>
+                <parameter name="interfaceName">
+                    <description>interfaceName</description>
+                    <default-value label="Interface Name (loopback or specific)"/>
+                    <data-type>String</data-type>
+                    <mandatory>true</mandatory>
+                    <isGlobal>false</isGlobal>
+                    <syntax>
+                        <pattern/>
+                    </syntax>
+                    <isGlobalVariable>false</isGlobalVariable>
+                </parameter>
+            </param-group>
+        </parameter-metadata>
+    </template-metadata>
+    <config platform="undefined">
+        <device-filtering-details>
+            <family value="Routers">
+                <min-supported-imageversion value=""/>
+            </family>
+            <family value="Optical Networking">
+                <min-supported-imageversion value=""/>
+            </family>
+        </device-filtering-details>
+        <cli name="cli command set">
+            <clicommand>router ospf 1
+  router-id $Loopback0
+  area 0
+    interface $interfaceName
+commit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</clicommand>
+        </cli>
+    </config>
+</ootb-template>

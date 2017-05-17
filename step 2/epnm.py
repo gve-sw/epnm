@@ -48,12 +48,12 @@ class EPNM(object):
 
 		self.templates = []
 
-		temp_in = open('templates.in', 'r')
+		temp_in = open('templates.txt', 'r')
 		for line in temp_in:
 			line = line.rstrip('\n')
 			self.templates.append(line)
 		temp_in.close()
-		print "Deploying templates from templates.in list:"
+		print "Deploying templates from templates.txt list:"
 		print self.templates
 
 	def getDevice(self, dev_id=''):

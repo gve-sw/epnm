@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><ootb-template>
+    <template-metadata name="XR Interface MPLS-TE">
+        <template-details>
+            <description/>
+            <author>root</author>
+            <tag-list/><tag-list/>
+        </template-details>
+        <parameter-metadata>
+            <param-group cliName="cli command set" isMandatory="true" name="XR Interface MPLS-TE parameters">
+                <description>Parameters for XR Interface MPLS-TE</description>
+                <parameter name="interfaceName">
+                    <description>interfaceName</description>
+                    <default-value label=""/>
+                    <data-type>String</data-type>
+                    <mandatory>true</mandatory>
+                    <isGlobal>false</isGlobal>
+                    <syntax>
+                        <pattern/>
+                    </syntax>
+                    <isGlobalVariable>false</isGlobalVariable>
+                </parameter>
+            </param-group>
+        </parameter-metadata>
+    </template-metadata>
+    <config>
+        <device-filtering-details>
+            <family value="Optical Networking,Routers">
+                <min-supported-imageversion value=""/>
+            </family>
+        </device-filtering-details>
+        <cli name="cli command set">
+            <clicommand>mpls traffic-eng
+interface $interfaceName
+
+
+
+
+
+</clicommand>
+        </cli>
+    </config>
+</ootb-template>
